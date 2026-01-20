@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: eyelash_sofle
       url: https://github.com/v-krivenko/my-zmk-sofle
-      revision: main
+      revision: master
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
