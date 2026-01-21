@@ -2,9 +2,6 @@ name: Draw Keymap
 on:
   workflow_dispatch:
   push:
-    branches:
-      - editor
-      - keymap-drawer
     paths:
       - "config/**"
       - .github/workflows/draw.yml
