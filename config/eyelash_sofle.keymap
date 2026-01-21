@@ -74,7 +74,7 @@
             bindings = <
 &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6     &kp F7  &kp F8  &kp F9  &kp F10           &kp F11
 &trans      &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &kp PG_UP  &kp N7  &kp N8  &kp N9  &kp MINUS         &kp EQUAL
-&trans      &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp PG_DN  &kp N4  &kp N5  &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp RCTRL   &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp PG_DN  &kp N4  &kp N5  &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans      &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans     &kp N1  &kp N2  &kp N3  &trans            &kp F12
 &trans      &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans     &trans  &kp N0  &trans  &trans
             >;
@@ -86,7 +86,7 @@
             bindings = <
 &kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6           &kp F7    &kp F8   &kp F9     &kp F10    &kp F11
 &trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp INS          &kp HOME  &kp END  &none      &kp UNDER  &kp PLUS
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT         &kp DOWN  &kp UP   &kp RIGHT  &kp LBRC   &kp RBRC
+&kp RCTRL  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT         &kp DOWN  &kp UP   &kp RIGHT  &kp LBRC   &kp RBRC
 &trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp PRINTSCREEN  &none     &none    &none      &trans     &kp F12
 &trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans           &trans    &trans   &trans     &trans
             >;
