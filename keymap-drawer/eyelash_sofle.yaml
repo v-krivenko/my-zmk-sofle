@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  layer0:
+  L0:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -57,15 +57,15 @@ layers:
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - layer1
+  - {t: '$$mdi:keyboard-space$$', h: L1}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - layer2
+  - {t: '$$mdi:keyboard-return$$', h: L2}
   - {t: '[', s: '{'}
   - {t: '=', s: +}
-  - $$mdi:backspace-reverse-outline$$
-  layer1:
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
+  L1:
   - $$mdi:keyboard-esc$$
   - F1
   - F2
@@ -130,7 +130,7 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer2:
+  L2:
   - '~'
   - F1
   - F2
@@ -195,7 +195,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer3:
+  L3:
   - '~'
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
@@ -263,8 +263,8 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
-  l: [layer3]
+  l: [L3]
 - p: [0, 13]
   k: $$mdi:keyboard-esc$$
 - p: [60, 56]
-  k: layer3
+  k: L3
