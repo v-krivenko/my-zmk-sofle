@@ -1,0 +1,22 @@
+# https://github.com/zmkfirmware/zmk/blob/main/.github/workflows/build-user-config.yml
+
+services:
+  zmk-build:
+    image: zmkfirmware/zmk-build-arm:stable
+
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /workspace
+
+    volumes:
+      - .:/workspace:cached
+      - ./firmware:/workspace/firmware
+      - zmk-west-cache:/west-cache
+
+    environment:
+      - TZ=Europe/Kyiv
+
+    tty: true
+    stdin_open: true
+
+volumes:
+  zmk-west-cache:
