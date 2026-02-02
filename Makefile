@@ -9,7 +9,10 @@ west_update:
 	docker compose run --rm zmk-build \
 		bash -c "west update"
 
-build: build_left build_right
+build: clean build_left build_right
+
+clean:
+	rm -rf build/* firmware/*
 
 build_right:
 	docker compose run --rm zmk-build \

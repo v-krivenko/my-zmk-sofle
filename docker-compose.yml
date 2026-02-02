@@ -9,7 +9,6 @@ services:
 
     volumes:
       - .:/workspace:cached
-      - ./firmware:/workspace/firmware
       - zmk-west-cache:/west-cache
 
     environment:
