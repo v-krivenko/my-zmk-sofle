@@ -34,12 +34,13 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+    escape_tilde: escape_tilde {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ESCAPE_TILDE";
+        bindings = <&kp ESC>, <&kp TILDE>;
 
-        tap-ms = <100>;
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
     };
 
     behaviors {
@@ -54,14 +55,69 @@
             layers = <3>;
         };
 
-        Esc {
-            bindings = <&kp ESC>;
+        grave {
+            bindings = <&kp GRAVE>;
             key-positions = <0 13>;
         };
 
         L3 {
             bindings = <&mo 3>;
             key-positions = <60 56>;
+        };
+
+        F12-debug {
+            bindings = <&kp F12>;
+            key-positions = <11 12>;
+        };
+
+        exclm {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 14>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <2 15>;
+        };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <3 16>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 17>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 18>;
+        };
+
+        caret {
+            bindings = <&kp CARET>;
+            key-positions = <7 20>;
+        };
+
+        amp {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <8 21>;
+        };
+
+        star {
+            bindings = <&kp ASTERISK>;
+            key-positions = <9 22>;
+        };
+
+        l-paren {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <10 23>;
+        };
+
+        r-paren {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <11 24>;
         };
     };
 
@@ -70,11 +126,11 @@
 
         L0 {
             bindings = <
-&kp GRAVE       &kp N1   &kp N2        &kp N3        &kp N4       &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8            &kp N9     &kp N0            &kp BACKSPACE
-&kp TAB         &kp Q    &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I             &kp O      &kp P             &kp BSLH
-&kp LEFT_SHIFT  &kp A    &kp S         &kp D         &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K             &kp L      &kp SEMI          &kp APOS
-&kp LCTRL       &kp Z    &kp X         &kp C         &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA         &kp DOT    &kp FSLH          &kp ENTER
-&none           &kp ESC  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &lt 2 ENTER  &kp LEFT_BRACKET  &kp EQUAL  &mt RCTRL DELETE
+&kp GRAVE       &kp N1   &kp N2        &kp N3        &kp N4       &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8     &kp N9   &kp N0            &kp BACKSPACE
+&kp TAB         &kp Q    &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I      &kp O    &kp P             &kp BSLH
+&kp LEFT_SHIFT  &kp A    &kp S         &kp D         &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K      &kp L    &kp SEMI          &kp APOS
+&kp LCTRL       &kp Z    &kp X         &kp C         &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
+&none           &kp ESC  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &lt 2 ENTER  &kp HOME   &kp END  &mt RCTRL DELETE
             >;
 
             display-name = "L0";
@@ -82,11 +138,11 @@
 
         L1 {
             bindings = <
-&kp ESCAPE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6     &kp F7  &kp F8  &kp F9  &kp F10           &kp F11
-&trans      &kp F11  &kp F12  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &kp PG_UP  &kp N7  &kp N8  &kp N9  &kp MINUS         &kp EQUAL
-&trans      &trans   &trans   &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp PG_DN  &kp N4  &kp N5  &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp RCTRL   &trans   &trans   &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans     &kp N1  &kp N2  &kp N3  &trans            &trans
-&trans      &trans   &trans   &trans  &trans  &trans       &mkp LCLK        &trans     &trans  &kp N0  &trans  &trans
+&kp ESCAPE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10           &kp F11
+&trans      &kp F11  &kp F12  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8  &kp N9  &kp MINUS         &kp EQUAL
+&trans      &trans   &trans   &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5  &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans   &trans   &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2  &kp N3  &trans            &trans
+&trans      &trans   &trans   &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0  &trans  &trans
             >;
 
             display-name = "L1";
@@ -94,14 +150,14 @@
 
         L2 {
             bindings = <
-&kp TILDE  &kp F1         &kp F2     &kp F3     &kp F4     &kp F5          &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10    &kp F11
-&trans     &kp F11        &kp F12    &trans     &trans     &trans          &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp UNDER  &kp PLUS
-&trans     &trans         &trans     &trans     &trans     &trans          &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp LBRC   &kp RBRC
-&trans     &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp SLASH  &kp ASTERISK    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans     &trans         &trans     &trans     &trans     &trans          &mkp LCLK        &trans            &trans             &trans           &trans                 &trans
+&kp TILDE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10    &kp F11
+&trans     &kp F11  &kp F12  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp UNDER  &kp PLUS
+&trans     &trans   &trans   &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp LBRC   &kp RBRC
+&trans     &trans   &trans   &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
+&trans     &trans   &trans   &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN          &trans
             >;
 
-            display-name = "L2";
+            display-name = "vim-mo";
         };
 
         L3 {
