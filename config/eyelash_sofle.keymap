@@ -124,7 +124,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        L0 {
+        QWERTY {
             bindings = <
 &kp GRAVE       &kp N1   &kp N2        &kp N3        &kp N4       &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8     &kp N9   &kp N0            &kp BACKSPACE
 &kp TAB         &kp Q    &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I      &kp O    &kp P             &kp BSLH
@@ -136,7 +136,7 @@
             display-name = "L0";
         };
 
-        L1 {
+        NUMS {
             bindings = <
 &kp ESCAPE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10           &kp F11
 &trans      &kp F11  &kp F12  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8  &kp N9  &kp MINUS         &kp EQUAL
@@ -148,7 +148,7 @@
             display-name = "L1";
         };
 
-        L2 {
+        vim-mo {
             bindings = <
 &kp TILDE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10    &kp F11
 &trans     &kp F11  &kp F12  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp UNDER  &kp PLUS
@@ -157,10 +157,10 @@
 &trans     &trans   &trans   &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN          &trans
             >;
 
-            display-name = "vim-mo";
+            display-name = "L2";
         };
 
-        L3 {
+        BT {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans       &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans       &trans
