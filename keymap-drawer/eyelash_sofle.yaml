@@ -60,8 +60,8 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: L1}
   - {t: '$$mdi:keyboard-space$$', h: L1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: vim-mo}
-  - {t: '$$mdi:keyboard-return$$', h: vim-mo}
+  - {t: '$$mdi:keyboard-space$$', h: L2}
+  - {t: '$$mdi:keyboard-return$$', h: L2}
   - HOME
   - END
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -130,7 +130,7 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  vim-mo:
+  L2:
   - '~'
   - F1
   - F2

@@ -467,14 +467,14 @@ path.combo {
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#vim-mo">
-<text x="0" y="24" class="key hold layer-activator">vim-mo</text>
+<a href="#L2">
+<text x="0" y="24" class="key hold layer-activator">L2</text>
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
-<a href="#vim-mo">
-<text x="0" y="24" class="key hold layer-activator">vim-mo</text>
+<a href="#L2">
+<text x="0" y="24" class="key hold layer-activator">L2</text>
 </a></g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -880,8 +880,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 776)" class="layer-vim-mo">
-<text x="0" y="28" class="label" id="vim-mo">vim-mo:</text>
+<g transform="translate(30, 776)" class="layer-L2">
+<text x="0" y="28" class="label" id="L2">L2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 56)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

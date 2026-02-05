@@ -65,7 +65,12 @@
             key-positions = <60 56>;
         };
 
-        F12-debug {
+        F1!_step_into {
+            bindings = <&kp F1!>;
+            key-positions = <10 12>;
+        };
+
+        F12_debug {
             bindings = <&kp F12>;
             key-positions = <11 12>;
         };
