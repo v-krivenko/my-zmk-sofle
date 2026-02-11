@@ -34,13 +34,27 @@
 &soft_off { hold-time-ms = <2000>; };
 
 / {
-    escape_tilde: escape_tilde {
+    esc_tilde: esc_tilde {
         compatible = "zmk,behavior-mod-morph";
-        label = "ESCAPE_TILDE";
+        label = "ESC_TILDE";
         bindings = <&kp ESC>, <&kp TILDE>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT)>;
+    };
+
+    arrow_right: arrow_right {
+        compatible = "zmk,behavior-tap-dance";
+        label = "ARROW_RIGHT";
+        #binding-cells = <0>;
+        bindings = <&kp MINUS>, <&kp GT>;
+    };
+
+    eq_right: eq_right {
+        compatible = "zmk,behavior-tap-dance";
+        label = "EQ_RIGHT";
+        #binding-cells = <0>;
+        bindings = <&kp EQUAL>, <&kp GT>;
     };
 
     behaviors {
@@ -124,6 +138,16 @@
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <11 24>;
         };
+
+        td_arrow_right {
+            bindings = <&arrow_right>;
+            key-positions = <63 49>;
+        };
+
+        td_eq_right {
+            bindings = <&eq_right>;
+            key-positions = <62 49>;
+        };
     };
 
     keymap {
@@ -131,11 +155,11 @@
 
         QWERTY {
             bindings = <
-&kp ESCAPE      &kp N1   &kp N2        &kp N3        &kp N4       &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8     &kp N9   &kp N0            &kp BACKSPACE
-&kp TAB         &kp Q    &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I      &kp O    &kp P             &kp BSLH
-&kp LEFT_SHIFT  &kp A    &kp S         &kp D         &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K      &kp L    &kp SEMI          &kp APOS
-&kp LCTRL       &kp Z    &kp X         &kp C         &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
-&none           &kp ESC  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &lt 2 ENTER  &kp HOME   &kp END  &mt RCTRL DELETE
+&esc_tilde      &kp N1            &kp N2        &kp N3        &kp N4       &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8     &kp N9   &kp N0            &kp BACKSPACE
+&kp TAB         &kp Q             &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I      &kp O    &kp P             &kp BSLH
+&kp LEFT_SHIFT  &mt LEFT_SHIFT A  &kp S         &kp D         &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K      &kp L    &kp SEMI          &kp APOS
+&kp LCTRL       &kp Z             &kp X         &kp C         &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
+&none           &tog 4            &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &lt 2 ENTER  &kp HOME   &kp END  &mt RCTRL DELETE
             >;
 
             display-name = "L0";
@@ -143,11 +167,11 @@
 
         NUMS {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &trans  &trans  &kp ASTERISK  &kp MINUS  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8        &kp N9     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5        &kp N6     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2        &kp N3     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0        &trans     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &none   &none   &kp STAR  &kp MINUS  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8    &kp N9     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5    &kp N6     &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2    &kp N3     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0    &trans     &trans
             >;
 
             display-name = "L1";
@@ -155,11 +179,11 @@
 
         vim-mo {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN          &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9         &kp F10  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
             >;
 
             display-name = "L2";
@@ -175,6 +199,17 @@
             >;
 
             display-name = "L3";
+        };
+
+        F_QWERTY {
+            display-name = "L0_F";
+            bindings = <
+&esc_tilde      &kp F1            &kp F2        &kp F3        &kp F4       &kp F5         &kp UP_ARROW     &kp F6       &kp F7       &kp F8     &kp F9   &kp F10           &kp BACKSPACE
+&kp TAB         &kp Q             &kp W         &kp E         &kp R        &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I      &kp O    &kp P             &kp BSLH
+&kp LEFT_SHIFT  &mt LEFT_SHIFT A  &kp S         &kp D         &kp F        &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K      &kp L    &kp SEMI          &kp APOS
+&kp LCTRL       &kp Z             &kp X         &kp C         &kp V        &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
+&none           &tog 0            &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &lt 2 ENTER  &kp HOME   &kp END  &mt RCTRL DELETE
+            >;
         };
     };
 };
