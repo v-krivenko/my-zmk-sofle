@@ -249,7 +249,7 @@ layers:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -263,16 +263,16 @@ layers:
   L0_F:
   - {t: '$$mdi:keyboard-esc$$', s: '~'}
   - F1
-  - F2
-  - F3
-  - F4
-  - F5
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
@@ -314,11 +314,11 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: L0, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - L1
-  - {t: '$$mdi:keyboard-space$$', h: L1}
+  - {t: L1, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: L1, type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: L2}
   - L2
@@ -331,7 +331,7 @@ combos:
   l: [L3]
 - p: [0, 13]
   k: {t: '`', s: '~'}
-- p: [60, 56]
+- p: [60, 56, 53]
   k: L3
 - p: [10, 12]
   k: F11
@@ -358,8 +358,10 @@ combos:
 - p: [11, 24]
   k: )
 - p: [63, 49]
-  k: '&arrow_right'
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
 - p: [62, 49]
-  k: '&eq_right'
-- p: [53, 54]
-  k: {t: L0_F, h: toggle}
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+- p: [63, 49]
+  k: '&arrow'
+- p: [62, 49]
+  k: '&eq_arrow'
