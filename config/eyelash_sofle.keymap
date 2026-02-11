@@ -125,24 +125,21 @@
             key-positions = <11 24>;
         };
 
-        td_arrow_right {
-            bindings = <&none>;
-            key-positions = <63 49>;
-        };
-
-        td_eq_right {
-            bindings = <&none>;
-            key-positions = <62 49>;
-        };
-
         arrow {
             bindings = <&arrow>;
             key-positions = <63 49>;
+            layers = <0>;
         };
 
         eq_arrow {
             bindings = <&eq_arrow>;
             key-positions = <62 49>;
+            layers = <0>;
+        };
+
+        F_layer {
+            bindings = <&tog 4>;
+            key-positions = <53 54>;
         };
     };
 
@@ -225,12 +222,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        F_layer {
-            if-layers = <0 1>;
-            then-layer = <4>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
