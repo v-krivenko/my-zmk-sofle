@@ -54,14 +54,14 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: L0_F, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: L1}
+  - L1
   - {t: '$$mdi:keyboard-space$$', h: L1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: L2}
-  - {t: '$$mdi:keyboard-return$$', h: L2}
+  - L2
   - HOME
   - END
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -317,11 +317,11 @@ layers:
   - {t: L0, h: toggle}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: L1}
+  - L1
   - {t: '$$mdi:keyboard-space$$', h: L1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: L2}
-  - {t: '$$mdi:keyboard-return$$', h: L2}
+  - L2
   - HOME
   - END
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -361,3 +361,5 @@ combos:
   k: '&arrow_right'
 - p: [62, 49]
   k: '&eq_right'
+- p: [53, 54]
+  k: {t: L0_F, h: toggle}

@@ -437,11 +437,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-7" y="-7" height="14" width="14.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(140, 259)" class="key keypos-53">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#L0_F">
-<text x="0" y="0" class="key tap layer-activator">L0_F</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(140, 259)" class="key none keypos-53">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-7" y="-7" height="14" width="14.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(196, 252)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -453,9 +451,8 @@ path.combo {
 </g>
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
 <a href="#L1">
-<text x="0" y="24" class="key hold layer-activator">L1</text>
+<text x="0" y="0" class="key tap layer-activator">L1</text>
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -475,9 +472,8 @@ path.combo {
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
 <a href="#L2">
-<text x="0" y="24" class="key hold layer-activator">L2</text>
+<text x="0" y="0" class="key tap layer-activator">L2</text>
 </a></g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -561,6 +557,12 @@ path.combo {
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="742" y="214" width="28" height="26" class="combo"/>
 <text x="756" y="228" class="combo tap"><tspan style="font-size: 78%">&amp;eq_right</tspan></text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="242" width="28" height="26" class="combo"/>
+<a href="#L0_F">
+<text x="168" y="256" class="combo tap layer-activator">L0_F</text>
+</a><text x="168" y="266" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -908,6 +910,12 @@ path.combo {
 <rect rx="6" ry="6" x="742" y="214" width="28" height="26" class="combo"/>
 <text x="756" y="228" class="combo tap"><tspan style="font-size: 78%">&amp;eq_right</tspan></text>
 </g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="242" width="28" height="26" class="combo"/>
+<a href="#L0_F">
+<text x="168" y="256" class="combo tap layer-activator">L0_F</text>
+</a><text x="168" y="266" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 776)" class="layer-L2">
@@ -1242,6 +1250,12 @@ path.combo {
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="742" y="214" width="28" height="26" class="combo"/>
 <text x="756" y="228" class="combo tap"><tspan style="font-size: 78%">&amp;eq_right</tspan></text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="242" width="28" height="26" class="combo"/>
+<a href="#L0_F">
+<text x="168" y="256" class="combo tap layer-activator">L0_F</text>
+</a><text x="168" y="266" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1608,6 +1622,12 @@ path.combo {
 <rect rx="6" ry="6" x="742" y="214" width="28" height="26" class="combo"/>
 <text x="756" y="228" class="combo tap"><tspan style="font-size: 78%">&amp;eq_right</tspan></text>
 </g>
+<g class="combo combopos-17">
+<rect rx="6" ry="6" x="154" y="242" width="28" height="26" class="combo"/>
+<a href="#L0_F">
+<text x="168" y="256" class="combo tap layer-activator">L0_F</text>
+</a><text x="168" y="266" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1553)" class="layer-L0_F">
@@ -1849,9 +1869,8 @@ path.combo {
 </g>
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
 <a href="#L1">
-<text x="0" y="24" class="key hold layer-activator">L1</text>
+<text x="0" y="0" class="key tap layer-activator">L1</text>
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1871,9 +1890,8 @@ path.combo {
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
 <a href="#L2">
-<text x="0" y="24" class="key hold layer-activator">L2</text>
+<text x="0" y="0" class="key tap layer-activator">L2</text>
 </a></g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1957,6 +1975,12 @@ path.combo {
 <g class="combo combopos-15">
 <rect rx="6" ry="6" x="742" y="214" width="28" height="26" class="combo"/>
 <text x="756" y="228" class="combo tap"><tspan style="font-size: 78%">&amp;eq_right</tspan></text>
+</g>
+<g class="combo combopos-16">
+<rect rx="6" ry="6" x="154" y="242" width="28" height="26" class="combo"/>
+<a href="#L0_F">
+<text x="168" y="256" class="combo tap layer-activator">L0_F</text>
+</a><text x="168" y="266" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
