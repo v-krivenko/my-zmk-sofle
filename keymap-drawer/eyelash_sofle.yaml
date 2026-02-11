@@ -357,11 +357,7 @@ combos:
   k: (
 - p: [11, 24]
   k: )
-- p: [63, 49]
-  k: '&arrow'
-  l: [L0]
 - p: [62, 49]
   k: '&eq_arrow'
-  l: [L0]
-- p: [53, 54]
-  k: {t: L0_F, h: toggle}
+- p: [63, 49]
+  k: '&arrow'
