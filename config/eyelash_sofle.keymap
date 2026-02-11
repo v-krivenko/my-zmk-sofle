@@ -65,8 +65,6 @@
             key-positions = <60 56>;
         };
 
-        F1!
-
         F11_step_into {
             bindings = <&kp F11>;
             key-positions = <10 12>;
