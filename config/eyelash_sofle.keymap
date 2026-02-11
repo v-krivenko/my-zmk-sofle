@@ -43,20 +43,6 @@
         mods = <(MOD_LSFT)>;
     };
 
-    arrow_right: arrow_right {
-        compatible = "zmk,behavior-tap-dance";
-        label = "ARROW_RIGHT";
-        #binding-cells = <0>;
-        bindings = <&kp MINUS>, <&kp GT>;
-    };
-
-    eq_right: eq_right {
-        compatible = "zmk,behavior-tap-dance";
-        label = "EQ_RIGHT";
-        #binding-cells = <0>;
-        bindings = <&kp EQUAL>, <&kp GT>;
-    };
-
     behaviors {
     };
 
@@ -76,7 +62,7 @@
 
         L3 {
             bindings = <&mo 3>;
-            key-positions = <60 56>;
+            key-positions = <60 56 53>;
         };
 
         F11_step_into {
@@ -140,18 +126,39 @@
         };
 
         td_arrow_right {
-            bindings = <&arrow_right>;
+            bindings = <&none>;
             key-positions = <63 49>;
         };
 
         td_eq_right {
-            bindings = <&eq_right>;
+            bindings = <&none>;
             key-positions = <62 49>;
         };
 
-        f_layer {
-            bindings = <&tog 4>;
-            key-positions = <53 54>;
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <63 49>;
+        };
+
+        eq_arrow {
+            bindings = <&eq_arrow>;
+            key-positions = <62 49>;
+        };
+    };
+
+    macros {
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "ARROW";
+        };
+
+        eq_arrow: eq_arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GT>;
+            label = "EQ_ARROW";
         };
     };
 
@@ -209,12 +216,21 @@
         F_QWERTY {
             display-name = "L0_F";
             bindings = <
-&esc_tilde      &kp F1            &kp F2        &kp F3        &kp F4  &kp F5         &kp UP_ARROW     &kp F6       &kp F7  &kp F8     &kp F9   &kp F10           &kp BACKSPACE
+&esc_tilde      &kp F1            &kp N2        &kp N3        &kp N4  &kp N5         &kp UP_ARROW     &kp N6       &kp N7  &kp N8     &kp N9   &kp N0            &kp BACKSPACE
 &kp TAB         &kp Q             &kp W         &kp E         &kp R   &kp T          &kp DOWN_ARROW   &kp Y        &kp U   &kp I      &kp O    &kp P             &kp BSLH
 &kp LEFT_SHIFT  &mt LEFT_SHIFT A  &kp S         &kp D         &kp F   &kp G          &kp LEFT_ARROW   &kp H        &kp J   &kp K      &kp L    &kp SEMI          &kp APOS
 &kp LCTRL       &kp Z             &kp X         &kp C         &kp V   &kp B          &kp RIGHT_ARROW  &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH          &kp ENTER
-&none           &to 0             &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &mo 2   &kp HOME   &kp END  &mt RCTRL DELETE
+&none           &none             &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &lt 1 SPACE    &kp ENTER        &lt 2 SPACE  &mo 2   &kp HOME   &kp END  &mt RCTRL DELETE
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        F_layer {
+            if-layers = <0 1>;
+            then-layer = <4>;
         };
     };
 };
