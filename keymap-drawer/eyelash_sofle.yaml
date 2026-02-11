@@ -317,8 +317,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - {t: L1, type: held}
-  - {t: '$$mdi:keyboard-space$$', h: L1, type: held}
+  - L1
+  - {t: '$$mdi:keyboard-space$$', h: L1}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: L2}
   - L2
@@ -358,10 +358,10 @@ combos:
 - p: [11, 24]
   k: )
 - p: [63, 49]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
-- p: [62, 49]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
-- p: [63, 49]
   k: '&arrow'
+  l: [L0]
 - p: [62, 49]
   k: '&eq_arrow'
+  l: [L0]
+- p: [53, 54]
+  k: {t: L0_F, h: toggle}
