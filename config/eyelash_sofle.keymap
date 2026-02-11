@@ -65,8 +65,10 @@
             key-positions = <60 56>;
         };
 
-        F1!_step_into {
-            bindings = <&kp F1!>;
+        F1!
+
+        F11_step_into {
+            bindings = <&kp F11>;
             key-positions = <10 12>;
         };
 
@@ -143,11 +145,11 @@
 
         NUMS {
             bindings = <
-&kp ESCAPE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10           &kp F11
-&trans      &kp F11  &kp F12  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8  &kp N9  &kp MINUS         &kp EQUAL
-&trans      &trans   &trans   &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5  &kp N6  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans   &trans   &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2  &kp N3  &trans            &trans
-&trans      &trans   &trans   &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0  &trans  &trans
+&kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &trans  &trans  &kp ASTERISK  &kp MINUS  &kp EQUAL  &trans
+&trans      &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8        &kp N9     &trans     &trans
+&trans      &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5        &kp N6     &trans     &trans
+&trans      &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2        &kp N3     &trans     &trans
+&trans      &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0        &trans     &trans
             >;
 
             display-name = "L1";
@@ -155,11 +157,11 @@
 
         vim-mo {
             bindings = <
-&kp TILDE  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10    &kp F11
-&trans     &kp F11  &kp F12  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp UNDER  &kp PLUS
-&trans     &trans   &trans   &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp LBRC   &kp RBRC
-&trans     &trans   &trans   &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans     &trans
-&trans     &trans   &trans   &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN          &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9                 &kp F10  &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN          &trans
             >;
 
             display-name = "L2";
@@ -167,11 +169,11 @@
 
         BT {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans       &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans       &trans
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans       &trans
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans           &trans           &sys_reset       &soft_off        &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans       &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans       &trans
+&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans       &trans
+&trans  &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans           &trans           &sys_reset       &soft_off        &bootloader  &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
             display-name = "L3";
