@@ -58,6 +58,7 @@
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <0 13>;
+            layers = <0>;
         };
 
         L3 {
@@ -68,11 +69,13 @@
         F11_step_into {
             bindings = <&kp F11>;
             key-positions = <10 12>;
+            layers = <0>;
         };
 
         F12_debug {
             bindings = <&kp F12>;
             key-positions = <11 12>;
+            layers = <0>;
         };
 
         exclm {
