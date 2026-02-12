@@ -90,7 +90,7 @@ layers:
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -260,71 +260,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L0_F:
-  - {t: '$$mdi:keyboard-esc$$', s: '~'}
-  - F1
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - S
-  - D
-  - F
-  - G
-  - $$mdi:arrow-left-bold$$
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - L1
-  - {t: '$$mdi:keyboard-space$$', h: L1}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: L2}
-  - L2
-  - HOME
-  - END
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
@@ -337,27 +272,69 @@ combos:
   k: F11
 - p: [11, 12]
   k: F12
-- p: [1, 14]
+- p: [14, 27]
   k: '!'
-- p: [2, 15]
+  l: [L0]
+- p: [15, 28]
   k: '@'
-- p: [3, 16]
+  l: [L0]
+- p: [16, 29]
   k: '#'
-- p: [4, 17]
+  l: [L0]
+- p: [17, 30]
   k: $
-- p: [5, 18]
+  l: [L0]
+- p: [18, 31]
   k: '%'
-- p: [7, 20]
+  l: [L0]
+- p: [20, 33]
   k: ^
-- p: [8, 21]
+  l: [L0]
+- p: [21, 34]
   k: '&'
-- p: [9, 22]
+  l: [L0]
+- p: [22, 35]
   k: '*'
-- p: [10, 23]
+  l: [L0]
+- p: [23, 36]
   k: (
-- p: [11, 24]
+  l: [L0]
+- p: [24, 37]
   k: )
+  l: [L0]
 - p: [62, 49]
   k: '&eq_arrow'
+  l: [L0]
 - p: [63, 49]
   k: '&arrow'
+  l: [L0]
+- p: [1, 14]
+  k: F1
+  l: [L0]
+- p: [15, 2]
+  k: F2
+  l: [L0]
+- p: [3, 16]
+  k: F3
+  l: [L0]
+- p: [4, 17]
+  k: F4
+  l: [L0]
+- p: [5, 18]
+  k: F5
+  l: [L0]
+- p: [7, 20]
+  k: F6
+  l: [L0]
+- p: [8, 21]
+  k: F7
+  l: [L0]
+- p: [9, 22]
+  k: F8
+  l: [L0]
+- p: [10, 23]
+  k: F9
+  l: [L0]
+- p: [11, 24]
+  k: F10
+  l: [L0]
