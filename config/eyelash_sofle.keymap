@@ -209,6 +209,16 @@
             key-positions = <11 24>;
             layers = <0>;
         };
+
+        L1_toggle {
+            bindings = <&tog 1>;
+            key-positions = <56 57>;
+        };
+
+        L2_toggle {
+            bindings = <&tog 2>;
+            key-positions = <59 60>;
+        };
     };
 
     macros {
@@ -244,11 +254,11 @@
 
         NUMS {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &none   &none   &none   &none   &none      &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2  &kp N3  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0  &none   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &none   &none            &none            &none            &none      &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &none            &trans
             >;
 
             display-name = "L1";
@@ -256,11 +266,11 @@
 
         vim-mo {
             bindings = <
-&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9         &kp F10  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &mmv MOVE_UP     &kp F6            &kp F7             &kp F8           &kp F9         &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
             >;
 
             display-name = "L2";
