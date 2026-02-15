@@ -61,21 +61,21 @@
             layers = <0>;
         };
 
+        L1_toggle {
+            bindings = <&tog 1>;
+            key-positions = <56 57>;
+            layers = <0 1>;
+        };
+
+        L2_toggle {
+            bindings = <&tog 2>;
+            key-positions = <59 60>;
+            layers = <0 2>;
+        };
+
         L3 {
             bindings = <&mo 3>;
             key-positions = <56 53>;
-        };
-
-        F11_step_into {
-            bindings = <&kp F11>;
-            key-positions = <10 12>;
-            layers = <0>;
-        };
-
-        F12_debug {
-            bindings = <&kp F12>;
-            key-positions = <11 12>;
-            layers = <0>;
         };
 
         exclm {
@@ -126,13 +126,13 @@
             layers = <0>;
         };
 
-        l-paren {
+        l_paren {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <23 36>;
             layers = <0>;
         };
 
-        r-paren {
+        r_paren {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <24 37>;
             layers = <0>;
@@ -210,14 +210,16 @@
             layers = <0>;
         };
 
-        L1_toggle {
-            bindings = <&tog 1>;
-            key-positions = <56 57>;
+        f11_step_into {
+            bindings = <&kp F11>;
+            key-positions = <10 12>;
+            layers = <0>;
         };
 
-        L2_toggle {
-            bindings = <&tog 2>;
-            key-positions = <59 60>;
+        f12_debug {
+            bindings = <&kp F12>;
+            key-positions = <11 12>;
+            layers = <0>;
         };
 
         L_BRACKET {
