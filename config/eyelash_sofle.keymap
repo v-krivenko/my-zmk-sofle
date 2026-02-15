@@ -245,6 +245,18 @@
             key-positions = <35 36>;
             layers = <0>;
         };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <47 48>;
+            layers = <0>;
+        };
+
+        minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <48 49>;
+            layers = <0>;
+        };
     };
 
     macros {
