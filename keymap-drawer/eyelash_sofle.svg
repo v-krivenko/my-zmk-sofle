@@ -622,6 +622,24 @@ path.combo {
 <text x="572" y="289" class="combo tap layer-activator">L2</text>
 </a><text x="572" y="300" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-28">
+<rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo"/>
+<text x="700" y="88" class="combo tap">[</text>
+<text x="700" y="76" class="combo shifted">{</text>
+</g>
+<g class="combo combopos-29">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<text x="756" y="88" class="combo tap">]</text>
+<text x="756" y="76" class="combo shifted">}</text>
+</g>
+<g class="combo combopos-30">
+<rect rx="6" ry="6" x="686" y="130" width="28" height="26" class="combo"/>
+<text x="700" y="144" class="combo tap">{</text>
+</g>
+<g class="combo combopos-31">
+<rect rx="6" ry="6" x="742" y="130" width="28" height="26" class="combo"/>
+<text x="756" y="144" class="combo tap">}</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 388)" class="layer-L1">
@@ -977,9 +995,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(840, 56)" class="key trans keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(840, 56)" class="key keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">INS</text>
 </g>
 <g transform="translate(896, 56)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>

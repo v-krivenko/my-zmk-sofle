@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - INS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -345,3 +345,15 @@ combos:
   k: {t: L1, h: toggle}
 - p: [59, 60]
   k: {t: L2, h: toggle}
+- p: [21, 22]
+  k: {t: '[', s: '{'}
+  l: [L0]
+- p: [22, 23]
+  k: {t: ']', s: '}'}
+  l: [L0]
+- p: [34, 35]
+  k: '{'
+  l: [L0]
+- p: [35, 36]
+  k: '}'
+  l: [L0]
