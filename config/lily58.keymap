@@ -1,0 +1,551 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    macros {
+        NotEqual: NotEqual {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_8 &kp KP_N8 &kp KP_N0 &kp KP_N0>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "NOTEQUAL";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        pi: pi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "PI";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        plusminus: plusminus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "PLUSMINUS";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        greaterthan: greaterthan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "GREATERTHAN";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        lessthan: lessthan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "LESSTHAN";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        approxequal: approxequal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_4 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "APPROXEQUAL";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        alpha: alpha {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "ALPHA";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Micro: Micro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "MICRO";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        degree: degree {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "DEGREE";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        square: square {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_7 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "SQUARE";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        Diam: Diam {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "DIAM";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        littledelta: littledelta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "LITTLEDELTA";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        wireOn: wire {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp Q &tog 4>;
+
+            label = "WIRE";
+        };
+
+        wireOff: wireOff {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LA(Q) &tog 4>;
+
+            label = "WIREOFF";
+        };
+
+        Theta: Theta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp RALT>;
+
+            label = "THETA";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        ClrBT: ClrBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&bt BT_CLR>;
+
+            label = "CLRBT";
+        };
+
+        milli: milli {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp M &kp M>;
+
+            label = "MILLI";
+        };
+    };
+
+    behaviors {
+        capwd: capwd {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            label = "CAPWD";
+            bindings = <&kp LSHFT>, <&kp CAPS>;
+
+            tapping-term-ms = <400>;
+        };
+
+        UtilityL: UtilityL {
+            compatible = "zmk,behavior-hold-tap";
+            label = "UTILITYL";
+            bindings = <&sl>, <&to>;
+
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <90>;
+            require-prior-idle-ms = <500>;
+            hold-trigger-key-positions = <0 1 2 5 6 7 8 9 10 18 19 20 21 22 43 3 4 42 36>;
+        };
+
+        A_key: A_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "A_KEY";
+            bindings = <&kp A>, <&kp C>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
+
+        S_key: S_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_KEY";
+            bindings = <&kp S>, <&kp Y>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        BtClr: BtClr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BTCLR";
+            bindings = <&ClrBT>, <&none>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <5000>;
+            require-prior-idle-ms = <200>;
+        };
+
+        RMod: RMod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RMOD";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&tog>;
+
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        Nav_Mod: Nav_Mod {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NAV_MOD";
+            #binding-cells = <2>;
+            bindings = <&mo>, <&tog>;
+
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+        };
+
+        D_key: D_key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "D_KEY";
+            bindings = <&kp D>, <&kp Z>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+
+        ESC_Key: ESC_Key {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_KEY";
+            bindings = <&kp ESCAPE>, <&kp S>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <11 10>;
+        };
+
+        LBrak {
+            bindings = <&kp LBKT>;
+            key-positions = <18 19>;
+            require-prior-idle-ms = <200>;
+        };
+
+        rbrak {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <20 19>;
+            require-prior-idle-ms = <200>;
+        };
+
+        lbrace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <30 31>;
+            require-prior-idle-ms = <200>;
+        };
+
+        rbrace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <31 32>;
+            require-prior-idle-ms = <200>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <37 38>;
+            require-prior-idle-ms = <250>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <38 39>;
+            require-prior-idle-ms = <250>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <39 40>;
+            require-prior-idle-ms = <250>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+            timeout-ms = <20>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <9 10>;
+        };
+
+        under {
+            bindings = <&kp UNDER>;
+            key-positions = <21 22>;
+            require-prior-idle-ms = <125>;
+        };
+
+        semi {
+            bindings = <&kp SEMI>;
+            key-positions = <22 23>;
+        };
+
+        col {
+            bindings = <&kp COLON>;
+            key-positions = <34 35>;
+        };
+
+        equals {
+            bindings = <&kp EQUAL>;
+            key-positions = <2 3>;
+        };
+
+        inch {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <14 15>;
+        };
+
+        millimeter {
+            bindings = <&milli>;
+            key-positions = <26 27>;
+        };
+
+        snip {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <24 25 26>;
+        };
+
+        kp_comma {
+            bindings = <&kp COMMA>;
+            key-positions = <24 25>;
+            timeout-ms = <20>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
+
+            display-name = "abc";
+            bindings = <
+&kp ESC        &kp EXCL  &kp AT  &kp HASH   &kp DOLLAR  &kp PERCENT                               &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp TAB        &kp Q     &kp W   &kp E      &kp R       &kp T                                     &kp Y      &kp U          &kp I      &kp O                 &kp P                  &kp BACKSLASH
+&capwd         &kp A     &kp S   &kp D      &kp F       &kp G                                     &kp H      &kp J          &kp K      &kp L                 &kp SINGLE_QUOTE       &kp ENTER
+&UtilityL 2 1  &kp Z     &kp X   &kp C      &kp V       &kp B        &kp LCTRL    &kp RIGHT_META  &kp N      &kp M          &kp COMMA  &kp PERIOD            &kp SLASH              &kp RSHFT
+                                 &kp ENTER  &kp LALT    &kp LSHFT    &kp SPACE    &kp SPACE       &RMod 1 1  &kp RALT       &kp RCTRL
+            >;
+        };
+
+        SldWksNumb {
+            display-name = "||||||||||||||||||||||||";
+            bindings = <
+&kp N7         &kp N8  &kp N9   &kp KP_DIVIDE    &kp BSPC  &kp DEL                            &kp EQUAL     &plusminus    &greaterthan  &lessthan  &NotEqual     &kp BSPC
+&kp N4         &kp N5  &kp N6   &kp KP_MULTIPLY  &A_key    &ESC_Key                           &Diam         &square       &kp HOME      &kp UP     &littledelta  &Theta
+&kp N1         &kp N2  &kp N3   &kp KP_SUBTRACT  &D_key    &S_key                             &Micro        &approxequal  &kp LEFT      &kp DOWN   &kp RIGHT     &trans
+&UtilityL 2 0  &kp N0  &kp DOT  &kp KP_PLUS      &wireOn   &kp TAB    &kp LCTRL    &trans     &degree       &kp TILDE     &kp END       &pi        &kp GRAVE     &trans
+                                &kp RET          &kp LALT  &kp LSHFT  &kp SPACE    &kp SPACE  &Nav_Mod 0 1  &kp RALT      &kp RCTRL
+            >;
+        };
+
+        Utility {
+            display-name = "Utility";
+            bindings = <
+&trans  &none  &tog 6  &ext_power EP_TOG  &none  &BtClr 0 0                   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none
+&none   &none  &none   &none              &none  &none                        &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
+&none   &none  &none   &none              &none  &none                        &none          &none          &none          &none          &none          &none
+&tog 2  &none  &none   &none              &none  &none       &none    &trans  &none          &none          &none          &none          &none          &none
+                       &none              &none  &none       &none    &none   &none          &none          &none
+            >;
+        };
+
+        WireRet {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &wireOff  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans    &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Transparent_Wire_Activator {
+            display-name = "Wire";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Num_Keys {
+            bindings = <
+&kp KP_N7        &kp KP_NUMBER_8  &kp KP_N9        &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp KP_NUMBER_0  &kp KP_DOT       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Transparent_Num_Activator {
+            display-name = "KpNum";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Num_Keys_On {
+            if-layers = <1 6>;
+            then-layer = <5>;
+        };
+
+        Wire_Frame_On {
+            if-layers = <1 4>;
+            then-layer = <3>;
+        };
+    };
+};
