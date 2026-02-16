@@ -224,37 +224,37 @@
 
         L_BRACKET {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 22>;
+            key-positions = <34 35>;
             layers = <0>;
         };
 
         R_BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <22 23>;
-            layers = <0>;
-        };
-
-        L_BRACE {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <34 35>;
-            layers = <0>;
-        };
-
-        R_BRACE {
-            bindings = <&kp RIGHT_BRACE>;
             key-positions = <35 36>;
+            layers = <0>;
+        };
+
+        equal {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <21 22>;
+            layers = <0>;
+        };
+
+        plus {
+            bindings = <&kp KP_PLUS>;
+            key-positions = <23 22>;
             layers = <0>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <47 48>;
+            key-positions = <48 49>;
             layers = <0>;
         };
 
         minus {
             bindings = <&kp KP_MINUS>;
-            key-positions = <48 49>;
+            key-positions = <48 47>;
             layers = <0>;
         };
     };
@@ -292,11 +292,11 @@
 
         NUMS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans       &mmv MOVE_UP     &none   &none            &kp SLASH        &kp ASTERISK     &none      &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &none            &trans
+&trans  &trans       &trans    &trans         &trans  &trans       &mmv MOVE_UP     &none   &none            &kp SLASH        &kp ASTERISK     &none      &trans
+&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp MINUS  &trans
+&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL  &trans
+&trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans     &trans
+&trans  &trans       &trans    &trans         &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &none            &trans
             >;
 
             display-name = "L1";
@@ -304,11 +304,11 @@
 
         vim-mo {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans         &kp INS  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans         &kp INS  &trans
+&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
+&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
             >;
 
             display-name = "L2";
