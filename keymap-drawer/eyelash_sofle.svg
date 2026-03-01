@@ -662,12 +662,6 @@ path.combo {
 <rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
 <text x="728" y="145" class="combo tap">HOME</text>
 </g>
-<g class="combo combopos-35">
-<path d="M784,152 l-38,-8" class="combo"/>
-<path d="M784,152 l38,11" class="combo"/>
-<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
-<text x="784" y="152" class="combo tap">END</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 388)" class="layer-L1">
@@ -971,12 +965,6 @@ path.combo {
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
 <g class="combo combopos-2">
-<path d="M728,145 l-37,2" class="combo"/>
-<path d="M728,145 l37,2" class="combo"/>
-<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
-<text x="728" y="145" class="combo tap">HOME</text>
-</g>
-<g class="combo combopos-3">
 <path d="M784,152 l-38,-8" class="combo"/>
 <path d="M784,152 l38,11" class="combo"/>
 <rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
@@ -1260,18 +1248,6 @@ path.combo {
 <a href="#L3">
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
-<g class="combo combopos-2">
-<path d="M728,145 l-37,2" class="combo"/>
-<path d="M728,145 l37,2" class="combo"/>
-<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
-<text x="728" y="145" class="combo tap">HOME</text>
-</g>
-<g class="combo combopos-3">
-<path d="M784,152 l-38,-8" class="combo"/>
-<path d="M784,152 l38,11" class="combo"/>
-<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
-<text x="784" y="152" class="combo tap">END</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1165)" class="layer-L3">
@@ -1574,18 +1550,6 @@ path.combo {
 <a href="#L3">
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
-<g class="combo combopos-2">
-<path d="M728,145 l-37,2" class="combo"/>
-<path d="M728,145 l37,2" class="combo"/>
-<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
-<text x="728" y="145" class="combo tap">HOME</text>
-</g>
-<g class="combo combopos-3">
-<path d="M784,152 l-38,-8" class="combo"/>
-<path d="M784,152 l38,11" class="combo"/>
-<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
-<text x="784" y="152" class="combo tap">END</text>
-</g>
 </g>
 </g>
 </svg>
