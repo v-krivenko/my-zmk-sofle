@@ -265,7 +265,7 @@ quick-tap-ms = <220>;};
         c_end {
             bindings = <&kp END>;
             key-positions = <35 36 37>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
