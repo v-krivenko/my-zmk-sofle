@@ -314,11 +314,11 @@ quick-tap-ms = <220>;};
 
         vim-mo {
             bindings = <
-&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans         &kp INS  &trans
-&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans         &trans   &trans
-&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT      &trans   &trans
-&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans         &trans   &trans
-&trans  &trans       &trans    &trans         &trans  &trans    &mkp LCLK        &trans            &trans             &kp PAGE_UP      &kp PAGE_DOWN  &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans     &kp INS  &trans
+&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans     &trans   &trans
+&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT  &trans   &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans     &trans   &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mkp LCLK        &trans            &trans             &trans           &trans     &trans
             >;
 
             display-name = "L2";
