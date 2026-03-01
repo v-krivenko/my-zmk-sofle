@@ -57,13 +57,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - L1
   - {t: '$$mdi:keyboard-space$$', h: L1}
+  - {t: '$$mdi:keyboard-return$$', h: L2}
   - PRINTSCREEN
-  - {t: '$$mdi:keyboard-space$$', h: L2}
-  - L2
-  - HOME
-  - END
+  - {t: '$$mdi:keyboard-esc$$', h: L2}
+  - {t: '$$mdi:backspace$$', h: L1}
+  - PgUp
+  - PgDn
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   L1:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: /, s: '?'}
   - '*'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
@@ -90,7 +90,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - {t: '-', s: _}
+  - KP PLUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
@@ -123,10 +123,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - KP 0
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -188,10 +188,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
   - {type: held}
+  - $$mdi:mouse-left-click-outline$$
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -365,3 +365,7 @@ combos:
 - p: [48, 47]
   k: KP MINUS
   l: [L0]
+- p: [34, 35, 36]
+  k: HOME
+- p: [35, 36, 37]
+  k: END

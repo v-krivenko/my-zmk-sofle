@@ -463,14 +463,15 @@ path.combo {
 </g>
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#L1">
-<text x="0" y="0" class="key tap layer-activator">L1</text>
-</a></g>
-<g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
 <a href="#L1">
 <text x="0" y="24" class="key hold layer-activator">L1</text>
+</a></g>
+<g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
+<a href="#L2">
+<text x="0" y="24" class="key hold layer-activator">L2</text>
 </a></g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -478,22 +479,23 @@ path.combo {
 </g>
 <g transform="translate(535, 294) rotate(-30.0)" class="key keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-esc"/>
 <a href="#L2">
 <text x="0" y="24" class="key hold layer-activator">L2</text>
 </a></g>
 <g transform="translate(610, 283) rotate(-30.0)" class="key keypos-60">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#L2">
-<text x="0" y="0" class="key tap layer-activator">L2</text>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:backspace"/>
+<a href="#L1">
+<text x="0" y="24" class="key hold layer-activator">L1</text>
 </a></g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">HOME</text>
+<text x="0" y="0" class="key tap">PgUp</text>
 </g>
 <g transform="translate(728, 252)" class="key keypos-62">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">END</text>
+<text x="0" y="0" class="key tap">PgDn</text>
 </g>
 <g transform="translate(784, 259)" class="key keypos-63">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -654,6 +656,18 @@ path.combo {
 <tspan x="700" dy="-0.6em">KP</tspan><tspan x="700" dy="1.2em">MINUS</tspan>
 </text>
 </g>
+<g class="combo combopos-34">
+<path d="M728,145 l-37,2" class="combo"/>
+<path d="M728,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
+<text x="728" y="145" class="combo tap">HOME</text>
+</g>
+<g class="combo combopos-35">
+<path d="M784,152 l-38,-8" class="combo"/>
+<path d="M784,152 l38,11" class="combo"/>
+<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
+<text x="784" y="152" class="combo tap">END</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 388)" class="layer-L1">
@@ -705,9 +719,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">*</text>
 </g>
-<g transform="translate(840, 56)" class="key none keypos-11">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-7" y="-7" height="14" width="14.0" class="key none tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(840, 56)" class="key keypos-11">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">MINUS</tspan>
+</text>
 </g>
 <g transform="translate(896, 56)" class="key trans keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -766,8 +782,9 @@ path.combo {
 </g>
 <g transform="translate(840, 112)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">-</text>
-<text x="0" y="-24" class="key shifted">_</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">KP</tspan><tspan x="0" dy="1.2em">PLUS</tspan>
+</text>
 </g>
 <g transform="translate(896, 112)" class="key trans keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -911,8 +928,9 @@ path.combo {
 <g transform="translate(314, 283) rotate(30.0)" class="key held keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(389, 294) rotate(30.0)" class="key held alternate keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate"/>
+<g transform="translate(389, 294) rotate(30.0)" class="key trans keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -922,9 +940,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key trans keypos-60">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(610, 283) rotate(-30.0)" class="key held alternate keypos-60">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate"/>
 </g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -953,6 +970,18 @@ path.combo {
 <a href="#L3">
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M728,145 l-37,2" class="combo"/>
+<path d="M728,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
+<text x="728" y="145" class="combo tap">HOME</text>
+</g>
+<g class="combo combopos-3">
+<path d="M784,152 l-38,-8" class="combo"/>
+<path d="M784,152 l38,11" class="combo"/>
+<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
+<text x="784" y="152" class="combo tap">END</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 776)" class="layer-L2">
@@ -1192,19 +1221,19 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(389, 294) rotate(30.0)" class="key trans keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(389, 294) rotate(30.0)" class="key held keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:mouse-left-click-outline" xlink:href="#mdi:mouse-left-click-outline" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:mouse-left-click-outline"/>
 </g>
-<g transform="translate(535, 294) rotate(-30.0)" class="key held keypos-59">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-</g>
-<g transform="translate(610, 283) rotate(-30.0)" class="key held alternate keypos-60">
+<g transform="translate(535, 294) rotate(-30.0)" class="key held alternate keypos-59">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate"/>
+</g>
+<g transform="translate(610, 283) rotate(-30.0)" class="key trans keypos-60">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(672, 259)" class="key keypos-61">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1231,6 +1260,18 @@ path.combo {
 <a href="#L3">
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M728,145 l-37,2" class="combo"/>
+<path d="M728,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
+<text x="728" y="145" class="combo tap">HOME</text>
+</g>
+<g class="combo combopos-3">
+<path d="M784,152 l-38,-8" class="combo"/>
+<path d="M784,152 l38,11" class="combo"/>
+<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
+<text x="784" y="152" class="combo tap">END</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1165)" class="layer-L3">
@@ -1533,6 +1574,18 @@ path.combo {
 <a href="#L3">
 <text x="227" y="271" class="combo tap layer-activator">L3</text>
 </a></g>
+<g class="combo combopos-2">
+<path d="M728,145 l-37,2" class="combo"/>
+<path d="M728,145 l37,2" class="combo"/>
+<rect rx="6" ry="6" x="714" y="132" width="28" height="26" class="combo"/>
+<text x="728" y="145" class="combo tap">HOME</text>
+</g>
+<g class="combo combopos-3">
+<path d="M784,152 l-38,-8" class="combo"/>
+<path d="M784,152 l38,11" class="combo"/>
+<rect rx="6" ry="6" x="770" y="139" width="28" height="26" class="combo"/>
+<text x="784" y="152" class="combo tap">END</text>
+</g>
 </g>
 </g>
 </svg>
