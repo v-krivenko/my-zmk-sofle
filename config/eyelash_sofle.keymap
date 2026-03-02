@@ -15,7 +15,9 @@
     flavor = "balanced";
 };
 
-quick-tap-ms = <220>;};
+&lt {
+    quick-tap-ms = <220>;
+};
 
 &msc {
     acceleration-exponent = <1>;      // 0
