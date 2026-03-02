@@ -309,7 +309,7 @@
 
         NUMS {
             bindings = <
-&trans  &trans       &trans    &trans         &trans  &trans       &mmv MOVE_UP     &none   &none            &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
+&trans  &trans       &trans    &trans         &trans  &trans       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
 &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
 &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL     &trans
 &trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans
@@ -321,10 +321,10 @@
 
         vim-mo {
             bindings = <
-&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans     &kp INS  &trans
-&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans     &trans   &trans
-&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT  &trans   &trans
-&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans     &trans   &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans     &trans  &trans
+&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans     &trans  &trans
+&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT  &trans  &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans     &trans  &trans
 &trans  &trans       &trans    &trans         &trans  &trans    &mkp LCLK        &trans            &trans             &trans           &trans     &trans
             >;
 
