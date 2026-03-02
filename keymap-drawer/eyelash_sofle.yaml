@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: '[', s: ']'}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - S
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '[', s: ']'}
+  - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
