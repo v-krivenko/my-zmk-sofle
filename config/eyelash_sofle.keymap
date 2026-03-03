@@ -297,7 +297,7 @@
 
         QWERTY {
             bindings = <
-&esc_tilde      &kp N1            &kp N2        &kp N3        &kp N4       &kp N5         &kp C_VOL_UP          &kp N6     &kp N7           &kp N8       &kp N9         &kp N0            &kp INS
+&esc_tilde      &kp N1            &kp N2        &kp N3        &kp N4       &kp N5         &kp C_VOL_UP          &kp N6     &kp N7           &kp N8       &kp N9         &kp N0            &kp BACKSPACE
 &kp TAB         &kp Q             &kp W         &kp E         &kp R        &kp T          &kp C_VOLUME_DOWN     &kp Y      &kp U            &kp I        &kp O          &kp P             &left_right_bracket
 &kp LEFT_SHIFT  &mt LEFT_SHIFT A  &kp S         &kp D         &kp F        &kp G          &kp C_BRIGHTNESS_DEC  &kp H      &kp J            &kp K        &kp L          &kp SEMI          &kp APOS
 &kp LCTRL       &kp Z             &kp X         &kp C         &kp V        &kp B          &kp C_BRIGHTNESS_INC  &kp N      &kp M            &kp COMMA    &kp DOT        &kp FSLH          &kp BSLH
@@ -309,7 +309,7 @@
 
         NUMS {
             bindings = <
-&trans  &trans       &trans    &trans         &trans  &trans       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
+&trans  &trans       &trans    &trans         &trans  &trans       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &kp INS
 &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
 &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL     &trans
 &trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans        &trans
@@ -321,7 +321,7 @@
 
         vim-mo {
             bindings = <
-&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans     &trans  &trans
+&trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_UP     &trans            &trans             &trans           &trans     &trans  &kp INS
 &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &trans    &mmv MOVE_DOWN   &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &trans     &trans  &trans
 &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &trans    &mmv MOVE_LEFT   &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT  &trans  &trans
 &trans  &trans       &trans    &trans         &trans  &trans    &mmv MOVE_RIGHT  &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &trans     &trans  &trans
