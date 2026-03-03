@@ -219,7 +219,7 @@
 
         f11_step_into {
             bindings = <&kp F11>;
-            key-positions = <10 12>;
+            key-positions = <12 25>;
             layers = <0>;
         };
 
