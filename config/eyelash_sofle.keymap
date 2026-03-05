@@ -70,13 +70,13 @@
 
         L1_toggle {
             bindings = <&tog 1>;
-            key-positions = <56 57>;
+            key-positions = <56 57 55>;
             layers = <0 1>;
         };
 
         L2_toggle {
             bindings = <&tog 2>;
-            key-positions = <59 60>;
+            key-positions = <59 60 61>;
             layers = <0 2>;
         };
 
