@@ -509,16 +509,20 @@ path.combo {
 <text x="28" y="73" class="combo shifted">~</text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="338" y="276" width="28" height="26" class="combo"/>
+<path d="M319,279 l52,11" class="combo"/>
+<path d="M319,279 l-49,-14" class="combo"/>
+<rect rx="6" ry="6" x="305" y="266" width="28" height="26" class="combo"/>
 <a href="#L1">
-<text x="352" y="289" class="combo tap layer-activator">L1</text>
-</a><text x="352" y="300" class="combo hold">toggle</text>
+<text x="319" y="279" class="combo tap layer-activator">L1</text>
+</a><text x="319" y="290" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="558" y="276" width="28" height="26" class="combo"/>
+<path d="M605,279 l-52,11" class="combo"/>
+<path d="M605,279 l49,-14" class="combo"/>
+<rect rx="6" ry="6" x="591" y="266" width="28" height="26" class="combo"/>
 <a href="#L2">
-<text x="572" y="289" class="combo tap layer-activator">L2</text>
-</a><text x="572" y="300" class="combo hold">toggle</text>
+<text x="605" y="279" class="combo tap layer-activator">L2</text>
+</a><text x="605" y="290" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
 <path d="M227,271 l69,10" class="combo"/>
@@ -959,10 +963,12 @@ path.combo {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="338" y="276" width="28" height="26" class="combo"/>
+<path d="M319,279 l52,11" class="combo"/>
+<path d="M319,279 l-49,-14" class="combo"/>
+<rect rx="6" ry="6" x="305" y="266" width="28" height="26" class="combo"/>
 <a href="#L1">
-<text x="352" y="289" class="combo tap layer-activator">L1</text>
-</a><text x="352" y="300" class="combo hold">toggle</text>
+<text x="319" y="279" class="combo tap layer-activator">L1</text>
+</a><text x="319" y="290" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M227,271 l69,10" class="combo"/>
@@ -1247,10 +1253,12 @@ path.combo {
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="558" y="276" width="28" height="26" class="combo"/>
+<path d="M605,279 l-52,11" class="combo"/>
+<path d="M605,279 l49,-14" class="combo"/>
+<rect rx="6" ry="6" x="591" y="266" width="28" height="26" class="combo"/>
 <a href="#L2">
-<text x="572" y="289" class="combo tap layer-activator">L2</text>
-</a><text x="572" y="300" class="combo hold">toggle</text>
+<text x="605" y="279" class="combo tap layer-activator">L2</text>
+</a><text x="605" y="290" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M227,271 l69,10" class="combo"/>
