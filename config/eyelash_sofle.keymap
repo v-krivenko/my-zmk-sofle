@@ -313,7 +313,7 @@
 &trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
 &trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp EQUAL     &trans
 &trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &kp ENTER
-&trans  &trans       &trans    &trans         &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &none            &trans
+&trans  &trans       &trans    &trans         &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT
             >;
 
             display-name = "L1";
@@ -321,10 +321,10 @@
 
         vim-mo {
             bindings = <
-&trans  &kp F1       &kp F2    &kp F3         &kp F4  &kp F5       &mmv MOVE_UP     &kp F6    &kp F7    &kp F8  &kp F9     &kp F10  &kp F11
-&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans  &trans     &trans   &kp F12
-&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
-&trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &trans    &trans  &trans     &trans   &trans
+&trans  &kp F1       &kp F2    &kp F3         &kp F4  &kp F5       &mmv MOVE_UP     &kp F6    &kp F7    &kp F8  &kp F9     &kp F10    &kp F11
+&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans  &trans     &trans     &kp F12
+&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans     &trans
+&trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &trans    &trans  &trans     &kp ENTER  &kp ENTER
 &trans  &trans       &trans    &trans         &trans  &trans       &kp PRINTSCREEN  &trans    &trans    &trans  &trans     &trans
             >;
 
