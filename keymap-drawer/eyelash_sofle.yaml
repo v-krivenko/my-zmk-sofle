@@ -227,7 +227,7 @@ layers:
   - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&studio_unlock'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - RGB OFF
   - RGB EFR
