@@ -232,37 +232,31 @@
         L_BRACKET {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <34 35>;
-            layers = <0>;
         };
 
         R_BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <35 36>;
-            layers = <0>;
         };
 
         equal {
             bindings = <&kp KP_EQUAL>;
             key-positions = <21 22>;
-            layers = <0>;
         };
 
         plus {
             bindings = <&kp KP_PLUS>;
             key-positions = <23 22>;
-            layers = <0>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <48 49>;
-            layers = <0>;
         };
 
         minus {
             bindings = <&kp KP_MINUS>;
             key-positions = <48 47>;
-            layers = <0>;
         };
 
         c_home {
