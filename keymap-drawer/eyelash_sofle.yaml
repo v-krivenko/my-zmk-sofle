@@ -29,16 +29,16 @@ layers:
   - {t: '[', s: '{'}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
-  - S
-  - D
-  - F
+  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: D, h: LGUI}
+  - {t: F, h: '$$mdi:apple-keyboard-option$$'}
   - G
   - $$mdi:brightness-7$$
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: K, h: RGUI}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -62,7 +62,7 @@ layers:
   - INS
   - {t: '$$mdi:keyboard-esc$$', h: L2}
   - {t: '$$mdi:backspace$$', h: L1}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:backspace-reverse-outline$$
   - PgUp
   - PgDn
   L1:
