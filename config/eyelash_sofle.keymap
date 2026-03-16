@@ -38,7 +38,7 @@
         bindings = <&kp ESC>, <&kp TILDE>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LSFT)>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     left_right_bracket: left_right_bracket {
