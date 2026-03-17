@@ -315,11 +315,11 @@
 
         vim-mo {
             bindings = <
-&trans  &kp F1       &kp F2    &kp F3         &kp F4  &kp F5       &mmv MOVE_UP     &kp F6    &kp F7    &kp F8   &kp F9     &kp F10    &kp F11
-&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans   &trans     &trans     &kp F12
-&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
-&trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &kp HOME  &kp END  &trans     &trans     &trans
-&trans  &trans       &trans    &trans         &trans  &trans       &kp PRINTSCREEN  &trans    &trans    &trans   &trans     &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6    &kp F7    &kp F8   &kp F9     &kp F10    &kp F11
+&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans   &trans     &trans     &kp F12
+&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &kp HOME  &kp END  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &kp PRINTSCREEN  &trans    &trans    &trans   &trans     &trans
             >;
 
             display-name = "L2";
