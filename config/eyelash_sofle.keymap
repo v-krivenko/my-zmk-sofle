@@ -239,34 +239,24 @@
             key-positions = <35 36>;
         };
 
-        equal {
+        equal_and_plus {
             bindings = <&kp EQUAL>;
             key-positions = <21 22>;
         };
 
-        plus {
-            bindings = <&kp LS(EQUAL)>;
-            key-positions = <23 22>;
-        };
-
-        underscore {
-            bindings = <&kp LS(MINUS)>;
-            key-positions = <48 49>;
-        };
-
-        minus {
+        minus_and_underscore {
             bindings = <&kp MINUS>;
-            key-positions = <48 47>;
-        };
-
-        c_home {
-            bindings = <&kp HOME>;
-            key-positions = <34 35 36>;
+            key-positions = <23 22>;
         };
 
         c_end {
             bindings = <&kp END>;
-            key-positions = <35 36 37>;
+            key-positions = <48 49>;
+        };
+
+        c_home {
+            bindings = <&kp HOME>;
+            key-positions = <48 47>;
         };
     };
 
