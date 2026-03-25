@@ -240,22 +240,22 @@
         };
 
         equal {
-            bindings = <&kp KP_EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <21 22>;
         };
 
         plus {
-            bindings = <&kp KP_PLUS>;
+            bindings = <&kp LS(EQUAL)>;
             key-positions = <23 22>;
         };
 
         underscore {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp LS(MINUS)>;
             key-positions = <48 49>;
         };
 
         minus {
-            bindings = <&kp KP_MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <48 47>;
         };
 
