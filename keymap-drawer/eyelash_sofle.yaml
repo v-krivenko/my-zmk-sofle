@@ -424,3 +424,5 @@ combos:
   k: END
 - p: [48, 47]
   k: HOME
+- p: [53, 54, 55]
+  k: {t: L3, h: toggle}
