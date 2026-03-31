@@ -50,7 +50,7 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
-            layers = <4>;
+            layers = <3>;
         };
 
         grave {
@@ -71,14 +71,8 @@
             layers = <0 2>;
         };
 
-        FUN_toggle {
-            bindings = <&tog 3>;
-            key-positions = <53 54 55>;
-            layers = <0 3>;
-        };
-
-        L4 {
-            bindings = <&mo 4>;
+        L3_SYS {
+            bindings = <&mo 3>;
             key-positions = <56 53>;
         };
 
@@ -229,31 +223,37 @@
         L_BRACKET {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <34 35>;
+            require-prior-idle-ms = <120>;
         };
 
         R_BRACKET {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <35 36>;
+            require-prior-idle-ms = <120>;
         };
 
         equal_and_plus {
             bindings = <&kp EQUAL>;
             key-positions = <21 22>;
+            require-prior-idle-ms = <120>;
         };
 
         minus_and_underscore {
             bindings = <&kp MINUS>;
             key-positions = <23 22>;
+            require-prior-idle-ms = <120>;
         };
 
         c_end {
             bindings = <&kp END>;
             key-positions = <48 49>;
+            require-prior-idle-ms = <120>;
         };
 
         c_home {
             bindings = <&kp HOME>;
             key-positions = <48 47>;
+            require-prior-idle-ms = <120>;
         };
     };
 
@@ -278,11 +278,11 @@
 
         QWERTY {
             bindings = <
-&esc_tilde      &kp N1        &kp N2        &kp N3        &kp N4       &kp N5         &kp C_VOL_UP          &kp N6  &kp N7      &kp N8      &kp N9         &kp N0           &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E         &kp R        &kp T          &kp C_VOLUME_DOWN     &kp Y   &kp U       &kp I       &kp O          &kp P            &kp BSLH
-&kp LEFT_SHIFT  &mt LSHIFT A  &mt LCTRL S   &mt LGUI D    &mt LALT F   &kp G          &kp C_BRIGHTNESS_DEC  &kp H   &mt RALT J  &mt RGUI K  &mt RCTRL L    &mt RSHIFT SEMI  &kp APOS
-&kp LCTRL       &kp Z         &kp X         &kp C         &kp V        &kp B          &kp C_BRIGHTNESS_INC  &kp N   &kp M       &kp COMMA   &kp DOT        &kp FSLH         &kp ENTER
-&none           &mo 3         &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 2 ENTER    &kp INS               &mo 2   &mo 1       &kp DEL     &kp PAGE_DOWN  &kp PAGE_UP
+&esc_tilde      &kp N1        &kp N2       &kp N3        &kp N4       &kp N5         &kp C_VOL_UP          &kp N6  &kp N7      &kp N8      &kp N9         &kp N0           &kp BACKSPACE
+&kp TAB         &kp Q         &kp W        &kp E         &kp R        &kp T          &kp C_VOLUME_DOWN     &kp Y   &kp U       &kp I       &kp O          &kp P            &kp BSLH
+&kp LEFT_SHIFT  &mt LSHIFT A  &mt LCTRL S  &mt LGUI D    &mt LALT F   &kp G          &kp C_BRIGHTNESS_DEC  &kp H   &mt RALT J  &mt RGUI K  &mt RCTRL L    &mt RSHIFT SEMI  &kp APOS
+&kp LCTRL       &kp Z         &kp X        &kp C         &kp V        &kp B          &kp C_BRIGHTNESS_INC  &kp N   &kp M       &kp COMMA   &kp DOT        &kp FSLH         &kp ENTER
+&none           &none         &mo 2        &kp LEFT_ALT  &lt 1 SPACE  &lt 2 ENTER    &none                 &mo 2   &mo 1       &kp DEL     &kp PAGE_DOWN  &kp PAGE_UP
             >;
 
             display-name = "L0";
@@ -290,41 +290,29 @@
 
         NUMS {
             bindings = <
-&trans  &kp F1       &kp F2    &kp F3         &kp F4  &kp F5       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
-&trans  &kp PAGE_UP  &kp UP    &kp PAGE_DOWN  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
-&trans  &kp LEFT     &kp DOWN  &kp RIGHT      &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER     &trans
-&trans  &trans       &trans    &trans         &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &trans
-&trans  &trans       &trans    &trans         &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT
+&trans  &trans         &trans    &trans       &trans  &trans       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
+&trans  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
+&trans  &kp LEFT       &kp DOWN  &kp RIGHT    &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER     &trans
+&trans  &trans         &trans    &trans       &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &trans
+&trans  &trans         &trans    &trans       &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT
             >;
 
-            display-name = "L1";
+            display-name = "NUM";
         };
 
-        vim-mo {
+        vim-mo_fun {
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &mmv MOVE_UP     &kp F6    &kp F7    &kp F8   &kp F9     &kp F10    &kp F11
-&trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans   &trans     &trans     &kp F12
-&trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &kp HOME  &kp END  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans    &trans    &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans       &mmv MOVE_UP     &trans    &trans    &trans   &trans     &trans     &trans
+&trans  &kp F1  &kp F4  &kp F7  &kp F10  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &kp INS  &trans     &kp PSCRN  &trans
+&trans  &kp F2  &kp F5  &kp F8  &kp F11  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
+&trans  &kp F3  &kp F6  &kp F9  &kp F12  &kp LANG3    &mmv MOVE_RIGHT  &trans    &trans    &trans   &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans       &mkp LCLK        &trans    &trans    &trans   &trans     &trans
             >;
 
-            display-name = "L2";
+            display-name = "VIM_F";
         };
 
-        FUN {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp INS  &trans  &kp PSCRN  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans
-            >;
-
-            label = "L3";
-        };
-
-        BT {
+        SYS {
             bindings = <
 &trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4      &mmv MOVE_UP     &trans           &trans           &trans           &trans           &trans       &trans
 &trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans            &mmv MOVE_DOWN   &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans       &trans
@@ -333,7 +321,7 @@
 &trans  &trans        &trans          &trans        &trans        &trans            &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
-            display-name = "BT";
+            display-name = "SYS";
         };
     };
 
