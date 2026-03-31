@@ -63,8 +63,8 @@ layers:
   - L2
   - L1
   - $$mdi:backspace-reverse-outline$$
-  - PgUp
   - PgDn
+  - PgUp
   L1:
   - {t: '$$mdi:transfer$$', type: trans}
   - F1
