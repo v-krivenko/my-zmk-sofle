@@ -338,6 +338,9 @@ combos:
 - p: [59, 60, 61]
   k: {t: L2, h: toggle}
   l: [L0, L2]
+- p: [53, 54, 55]
+  k: {t: L3, h: toggle}
+  l: [L0, L3]
 - p: [56, 53]
   k: BT
 - p: [14, 27]
@@ -424,5 +427,3 @@ combos:
   k: END
 - p: [48, 47]
   k: HOME
-- p: [53, 54, 55]
-  k: {t: L3, h: toggle}
