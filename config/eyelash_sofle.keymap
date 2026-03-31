@@ -71,7 +71,7 @@
             layers = <0 2>;
         };
 
-        L3 {
+        L4 {
             bindings = <&mo 4>;
             key-positions = <56 53>;
         };
@@ -248,6 +248,11 @@
         c_home {
             bindings = <&kp HOME>;
             key-positions = <48 47>;
+        };
+
+        FUN_toggle {
+            bindings = <&tog 3>;
+            key-positions = <53 54 55>;
         };
     };
 
