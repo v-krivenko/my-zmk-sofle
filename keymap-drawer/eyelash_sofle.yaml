@@ -54,12 +54,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
   - VIM_F
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-return$$', h: VIM_F}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - CALC
   - VIM_F
   - NUM
   - $$mdi:backspace-reverse-outline$$
