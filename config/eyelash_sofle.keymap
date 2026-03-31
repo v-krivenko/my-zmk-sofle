@@ -50,7 +50,7 @@
         softoff {
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
-            layers = <3>;
+            layers = <4>;
         };
 
         grave {
@@ -72,7 +72,7 @@
         };
 
         L3 {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <56 53>;
         };
 
@@ -249,16 +249,6 @@
             bindings = <&kp HOME>;
             key-positions = <48 47>;
         };
-
-        m_ins {
-            bindings = <&kp INS>;
-            key-positions = <22 53>;
-        };
-
-        m_prt_sc {
-            bindings = <&kp PSCRN>;
-            key-positions = <53 24>;
-        };
     };
 
     macros {
@@ -310,10 +300,22 @@
 &trans  &trans  &trans  &trans  &trans  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &trans   &trans     &trans     &kp F12
 &trans  &trans  &trans  &trans  &trans  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
 &trans  &trans  &trans  &trans  &trans  &kp LANG3    &mmv MOVE_RIGHT  &trans    &kp HOME  &kp END  &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &kp PRINTSCREEN  &trans    &trans    &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans    &trans    &trans   &trans     &trans
             >;
 
             display-name = "L2";
+        };
+
+        FUN {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp INS  &trans  &kp PSCRN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans  &trans
+            >;
+
+            label = "L3";
         };
 
         BT {
@@ -325,7 +327,7 @@
 &trans  &trans        &trans          &trans        &trans        &trans            &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
-            display-name = "L3";
+            display-name = "BT";
         };
     };
 
