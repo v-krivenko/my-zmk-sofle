@@ -78,7 +78,7 @@ layers:
   - {t: /, s: '?'}
   - '*'
   - KP MINUS
-  - INS
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - $$mdi:arrow-up-bold$$
@@ -359,3 +359,7 @@ combos:
   k: END
 - p: [48, 47]
   k: HOME
+- p: [22, 53]
+  k: INS
+- p: [53, 24]
+  k: $$mdi:printer-outline$$
