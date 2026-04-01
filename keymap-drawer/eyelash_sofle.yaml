@@ -33,7 +33,7 @@ layers:
   - {t: D, h: LGUI}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
   - G
-  - $$mdi:brightness-7$$
+  - $$mdi:power-standby$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-option$$'}
   - {t: K, h: RGUI}
@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:brightness-5$$
+  - CMENU
   - N
   - M
   - {t: ',', s: <}
