@@ -290,11 +290,11 @@
 
         NUMS {
             bindings = <
-&trans  &trans         &trans    &trans       &trans  &trans       &mmv MOVE_UP     &none   &kp KP_NUMLOCK   &kp SLASH        &kp ASTERISK     &kp KP_MINUS  &trans
-&trans  &kp PAGE_DOWN  &kp UP    &kp PAGE_UP  &trans  &kp LANG1    &mmv MOVE_DOWN   &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
-&trans  &kp LEFT       &kp DOWN  &kp RIGHT    &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ENTER     &trans
-&trans  &trans         &trans    &trans       &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ENTER     &trans
-&trans  &trans         &trans    &trans       &trans  &trans       &mkp LCLK        &trans  &trans           &kp KP_NUMBER_0  &kp KP_N0        &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans       &mmv MOVE_UP     &none   &none   &kp SLASH  &kp ASTERISK  &kp MINUS  &trans
+&trans  &kp N1  &kp N4  &kp N7  &kp N0  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8     &kp N9        &kp PLUS   &trans
+&trans  &kp N2  &kp N5  &kp N8  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N6  &kp N5     &kp N4        &kp ENTER  &trans
+&trans  &kp N3  &kp N6  &kp N9  &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N3  &kp N2     &kp N1        &kp ENTER  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0     &kp N0        &kp DOT
             >;
 
             display-name = "NUM";
@@ -302,11 +302,11 @@
 
         vim-mo_fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans       &mmv MOVE_UP     &trans    &trans    &trans   &trans     &trans     &trans
-&trans  &kp F1  &kp F4  &kp F7  &kp F10  &kp LANG1    &mmv MOVE_DOWN   &trans    &trans    &kp INS  &trans     &kp PSCRN  &trans
-&trans  &kp F2  &kp F5  &kp F8  &kp F11  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
-&trans  &kp F3  &kp F6  &kp F9  &kp F12  &kp LANG3    &mmv MOVE_RIGHT  &trans    &trans    &trans   &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &mkp LCLK        &trans    &trans    &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans       &mmv MOVE_UP     &trans      &trans    &trans   &trans     &trans     &trans
+&trans  &kp F1  &kp F4  &kp F7  &kp F10  &kp LANG1    &mmv MOVE_DOWN   &trans      &trans    &kp INS  &trans     &kp PSCRN  &trans
+&trans  &kp F2  &kp F5  &kp F8  &kp F11  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
+&trans  &kp F3  &kp F6  &kp F9  &kp F12  &kp LANG3    &mmv MOVE_RIGHT  &kp KP_NUM  &trans    &trans   &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans       &mkp LCLK        &trans      &trans    &trans   &trans     &trans
             >;
 
             display-name = "VIM_F";
