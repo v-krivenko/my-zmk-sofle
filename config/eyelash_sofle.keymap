@@ -13,11 +13,9 @@
 &mt {
     quick-tap-ms = <175>;
     flavor = "balanced";
-    tapping-term-ms = <400>;
-    require-prior-idle-ms = <150>;
 };
 
-tapping-term-ms = <400>;};
+&lt { quick-tap-ms = <175>; };
 
 &msc {
     acceleration-exponent = <1>;      // 0
