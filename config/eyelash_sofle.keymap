@@ -203,6 +203,21 @@
             bindings = <&kp TAB>;
             key-positions = <29 28 30>;
         };
+
+        EN_lang {
+            bindings = <&kp LANG2>;
+            key-positions = <56 31>;
+        };
+
+        RU_lang {
+            bindings = <&kp LANG1>;
+            key-positions = <56 44>;
+        };
+
+        UA_lang {
+            bindings = <&kp LANG3>;
+            key-positions = <56 18>;
+        };
     };
 
     macros {
@@ -226,7 +241,7 @@
 
         QWERTY {
             bindings = <
-&esc_tilde      &kp N1        &kp N2        &kp N3        &kp N4       &kp N5         &kp C_VOL_UP       &kp N6  &kp N7      &kp N8          &kp N9         &kp N0           &kp BACKSPACE
+&kp GRAVE       &kp N1        &kp N2        &kp N3        &kp N4       &kp N5         &kp C_VOL_UP       &kp N6  &kp N7      &kp N8          &kp N9         &kp N0           &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E         &kp R        &kp T          &kp C_VOLUME_DOWN  &kp Y   &kp U       &kp I           &kp O          &kp P            &kp BSLH
 &kp LEFT_SHIFT  &mt LSHIFT A  &mt LCTRL S   &mt LGUI D    &mt LALT F   &kp G          &kp C_POWER        &kp H   &kp J       &kp K           &kp L          &kp SEMI         &kp APOS
 &kp LCTRL       &kp Z         &kp X         &kp C         &kp V        &kp B          &kp K_CMENU        &kp N   &mt RALT M  &mt RGUI COMMA  &mt RCTRL DOT  &mt RSHIFT FSLH  &kp ENTER
