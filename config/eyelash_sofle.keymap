@@ -53,12 +53,6 @@
             layers = <3>;
         };
 
-        grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <0 13>;
-            layers = <0>;
-        };
-
         L1_toggle {
             bindings = <&tog 1>;
             key-positions = <56 57 55>;
