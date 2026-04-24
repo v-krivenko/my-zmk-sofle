@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   L0:
-  - {t: '$$mdi:keyboard-esc$$', s: '~'}
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -331,3 +331,9 @@ combos:
   k: $$mdi:keyboard-esc$$
 - p: [29, 28, 30]
   k: $$mdi:keyboard-tab$$
+- p: [56, 31]
+  k: LANG2
+- p: [56, 44]
+  k: LANG1
+- p: [56, 18]
+  k: LANG3
