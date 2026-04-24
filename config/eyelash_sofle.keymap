@@ -191,11 +191,13 @@
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <16 17>;
+            require-prior-idle-ms = <200>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <29 30>;
+            require-prior-idle-ms = <120>;
         };
 
         EN_lang {
