@@ -995,22 +995,6 @@ path.combo {
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="217" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
 </g>
-<g class="combo combopos-12">
-<path d="M311,215 l2,49" class="combo"/>
-<path d="M311,215 l-2,-49" class="combo"/>
-<rect rx="6" ry="6" x="297" y="202" width="28" height="26" class="combo"/>
-<text x="311" y="215" class="combo tap">LANG2</text>
-</g>
-<g class="combo combopos-13">
-<rect rx="6" ry="6" x="297" y="230" width="28" height="26" class="combo"/>
-<text x="311" y="243" class="combo tap">LANG3</text>
-</g>
-<g class="combo combopos-14">
-<path d="M311,187 l3,77" class="combo"/>
-<path d="M311,187 l-3,-77" class="combo"/>
-<rect rx="6" ry="6" x="297" y="174" width="28" height="26" class="combo"/>
-<text x="311" y="187" class="combo tap">LANG1</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 776)" class="layer-VIM_F">
@@ -1704,22 +1688,6 @@ path.combo {
 <g class="combo combopos-11">
 <rect rx="6" ry="6" x="210" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="217" y="136" height="14" width="14.0" class="combo tap glyph mdi:keyboard-tab"/>
-</g>
-<g class="combo combopos-12">
-<path d="M311,215 l2,49" class="combo"/>
-<path d="M311,215 l-2,-49" class="combo"/>
-<rect rx="6" ry="6" x="297" y="202" width="28" height="26" class="combo"/>
-<text x="311" y="215" class="combo tap">LANG2</text>
-</g>
-<g class="combo combopos-13">
-<rect rx="6" ry="6" x="297" y="230" width="28" height="26" class="combo"/>
-<text x="311" y="243" class="combo tap">LANG3</text>
-</g>
-<g class="combo combopos-14">
-<path d="M311,187 l3,77" class="combo"/>
-<path d="M311,187 l-3,-77" class="combo"/>
-<rect rx="6" ry="6" x="297" y="174" width="28" height="26" class="combo"/>
-<text x="311" y="187" class="combo tap">LANG1</text>
 </g>
 </g>
 </g>

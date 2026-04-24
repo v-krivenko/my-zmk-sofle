@@ -330,7 +330,10 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
+  l: [L0, VIM_F]
 - p: [56, 44]
   k: LANG3
+  l: [L0, VIM_F]
 - p: [56, 18]
   k: LANG1
+  l: [L0, VIM_F]
