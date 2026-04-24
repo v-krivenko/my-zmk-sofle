@@ -186,22 +186,22 @@
 
         combo_bksp {
             bindings = <&kp BACKSPACE>;
-            key-positions = <22 23 24>;
+            key-positions = <22 23 21>;
         };
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <14 15 16>;
+            key-positions = <15 16 17>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <29 28 27>;
+            key-positions = <29 28 30>;
         };
 
         combo_delete {
             bindings = <&kp DEL>;
-            key-positions = <35 36 37>;
+            key-positions = <35 36 34>;
         };
     };
 
@@ -250,11 +250,11 @@
 
         vim-mo_fun {
             bindings = <
-&trans  &trans  &trans  &trans  &trans   &trans       &mmv MOVE_UP     &trans      &trans    &trans   &trans     &trans     &trans
-&trans  &kp F1  &kp F4  &kp F7  &kp F10  &kp LANG1    &mmv MOVE_DOWN   &trans      &trans    &kp INS  &trans     &kp PSCRN  &trans
-&trans  &kp F2  &kp F5  &kp F8  &kp F11  &kp LANG2    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
-&trans  &kp F3  &kp F6  &kp F9  &kp F12  &kp LANG3    &mmv MOVE_RIGHT  &kp KP_NUM  &trans    &trans   &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans   &trans       &mkp LCLK        &trans      &trans    &trans   &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &mmv MOVE_UP     &trans      &trans    &trans   &trans     &trans     &trans
+&trans  &kp F1  &kp F4  &kp F7  &kp F10  &trans    &mmv MOVE_DOWN   &trans      &trans    &kp INS  &trans     &kp PSCRN  &trans
+&trans  &kp F2  &kp F5  &kp F8  &kp F11  &trans    &mmv MOVE_LEFT   &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT  &kp ENTER  &trans
+&trans  &kp F3  &kp F6  &kp F9  &kp F12  &trans    &mmv MOVE_RIGHT  &kp KP_NUM  &trans    &trans   &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &mkp LCLK        &trans      &trans    &trans   &trans     &trans
             >;
 
             display-name = "VIM_F";
