@@ -264,9 +264,6 @@ combos:
 - p: [14, 28, 40]
   k: '&soft_off'
   l: [SYS]
-- p: [0, 13]
-  k: {t: '`', s: '~'}
-  l: [L0]
 - p: [56, 57, 55]
   k: {t: NUM, h: toggle}
   l: [L0, NUM]
