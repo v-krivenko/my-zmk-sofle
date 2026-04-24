@@ -190,12 +190,12 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <15 16 17>;
+            key-positions = <16 17>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <29 28 30>;
+            key-positions = <29 30>;
         };
 
         EN_lang {
