@@ -201,16 +201,19 @@
         EN_lang {
             bindings = <&kp LANG2>;
             key-positions = <56 31>;
+            layers = <0 2>;
         };
 
         RU_lang {
             bindings = <&kp LANG3>;
             key-positions = <56 44>;
+            layers = <0 2>;
         };
 
         UA_lang {
             bindings = <&kp LANG1>;
             key-positions = <56 18>;
+            layers = <0 2>;
         };
     };
 
