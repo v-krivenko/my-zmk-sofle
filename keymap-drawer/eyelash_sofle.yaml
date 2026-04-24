@@ -324,9 +324,9 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [35, 36, 34]
   k: $$mdi:backspace-reverse-outline$$
-- p: [15, 16, 17]
+- p: [16, 17]
   k: $$mdi:keyboard-esc$$
-- p: [29, 28, 30]
+- p: [29, 30]
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
