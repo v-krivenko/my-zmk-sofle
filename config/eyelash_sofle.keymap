@@ -194,6 +194,11 @@
             require-prior-idle-ms = <200>;
         };
 
+        combo_esc2 {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <29 30>;
@@ -216,11 +221,6 @@
             bindings = <&kp LANG1>;
             key-positions = <56 18>;
             layers = <0 2>;
-        };
-
-        combo_esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
         };
     };
 
