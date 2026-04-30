@@ -326,6 +326,8 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [16, 17]
   k: $$mdi:keyboard-esc$$
+- p: [0, 1]
+  k: $$mdi:keyboard-esc$$
 - p: [29, 30]
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
@@ -337,5 +339,3 @@ combos:
 - p: [56, 18]
   k: LANG1
   l: [L0, VIM_F]
-- p: [0, 1]
-  k: $$mdi:keyboard-esc$$
