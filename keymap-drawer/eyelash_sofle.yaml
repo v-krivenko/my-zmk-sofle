@@ -15,17 +15,17 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - Q
+  - {t: Q, h: '!'}
   - {t: W, h: '@'}
-  - E
-  - R
-  - T
+  - {t: E, h: '#'}
+  - {t: R, h: $}
+  - {t: T, h: '%'}
   - $$mdi:volume-low$$
-  - Y
+  - {t: Y, h: ^}
   - {t: U, h: '&'}
-  - I
-  - O
-  - P
+  - {t: I, h: '*'}
+  - {t: O, h: (}
+  - {t: P, h: )}
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-shift$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
-  - {t: /, h: '?', s: '?'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
