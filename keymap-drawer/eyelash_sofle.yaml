@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
   L0:
-  - '&tilde_esc'
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -16,13 +16,13 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - Q
-  - W
+  - {t: W, h: '@'}
   - E
   - R
   - T
   - $$mdi:volume-low$$
   - Y
-  - U
+  - {t: U, h: '&'}
   - I
   - O
   - P
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
-  - {t: /, s: '?'}
+  - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
@@ -93,9 +93,9 @@ layers:
   - KP PLUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '2', s: '@'}
-  - {t: '5', s: '%'}
-  - {t: '8', s: '*'}
+  - {t: '2', h: '$$mdi:apple-keyboard-shift$$', s: '@'}
+  - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
+  - {t: '8', h: LGUI, s: '*'}
   - {t: '$$mdi:transfer$$', type: trans}
   - LANG2
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -158,10 +158,10 @@ layers:
   - $$mdi:printer-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F2
-  - F5
-  - F8
-  - F11
+  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F8, h: LGUI}
+  - {t: F11, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
@@ -324,11 +324,11 @@ combos:
   k: {t: '$$mdi:backspace$$', type: backspace}
 - p: [35, 36, 34]
   k: $$mdi:backspace-reverse-outline$$
-- p: [16, 17]
+- p: [16, 15]
   k: $$mdi:keyboard-esc$$
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
-- p: [29, 30]
+- p: [29, 28]
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
