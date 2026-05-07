@@ -98,66 +98,6 @@
             key-positions = <56 53>;
         };
 
-        exclm {
-            bindings = <&kp EXCLAMATION>;
-            key-positions = <14 27>;
-            layers = <0>;
-        };
-
-        at {
-            bindings = <&kp AT>;
-            key-positions = <15 28>;
-            layers = <0>;
-        };
-
-        hash {
-            bindings = <&kp HASH>;
-            key-positions = <16 29>;
-            layers = <0>;
-        };
-
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <17 30>;
-            layers = <0>;
-        };
-
-        percent {
-            bindings = <&kp PERCENT>;
-            key-positions = <18 31>;
-            layers = <0>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <20 33>;
-            layers = <0>;
-        };
-
-        amp {
-            bindings = <&kp AMPERSAND>;
-            key-positions = <21 34>;
-            layers = <0>;
-        };
-
-        star {
-            bindings = <&kp ASTERISK>;
-            key-positions = <22 35>;
-            layers = <0>;
-        };
-
-        l_paren {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <23 36>;
-            layers = <0>;
-        };
-
-        r_paren {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <24 37>;
-            layers = <0>;
-        };
-
         eq_arrow {
             bindings = <&eq_arrow>;
             key-positions = <62 49>;
@@ -171,25 +111,25 @@
         };
 
         L_BRACKET {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&long_press LEFT_BRACE LBKT>;
             key-positions = <34 35>;
             require-prior-idle-ms = <120>;
         };
 
         R_BRACKET {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&long_press RIGHT_BRACE RBKT>;
             key-positions = <35 36>;
             require-prior-idle-ms = <120>;
         };
 
         equal_and_plus {
-            bindings = <&kp EQUAL>;
+            bindings = <&long_press PLUS EQUAL>;
             key-positions = <21 22>;
             require-prior-idle-ms = <120>;
         };
 
         minus_and_underscore {
-            bindings = <&kp MINUS>;
+            bindings = <&long_press UNDER MINUS>;
             key-positions = <23 22>;
             require-prior-idle-ms = <120>;
         };
@@ -206,31 +146,16 @@
             require-prior-idle-ms = <120>;
         };
 
-        combo_bksp {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <22 23 21>;
-        };
-
-        combo_delete {
-            bindings = <&kp DEL>;
-            key-positions = <35 36 34>;
-        };
-
         combo_esc {
             bindings = <&kp ESC>;
             key-positions = <16 15>;
             require-prior-idle-ms = <200>;
         };
 
-        combo_esc2 {
-            bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <29 28>;
-            require-prior-idle-ms = <120>;
+            require-prior-idle-ms = <200>;
         };
 
         EN_lang {
@@ -274,10 +199,10 @@
         QWERTY {
             bindings = <
 &kp GRAVE       &kp N1                     &kp N2                 &kp N3               &kp N4                &kp N5                   &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
-&kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &kp BSLH
-&kp LEFT_SHIFT  &mt LSHIFT A               &mt LCTRL S            &mt LGUI D           &mt LALT F            &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &mt RSHIFT SEMI                  &kp APOS
-&kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &mt RCTRL DOT                   &kp FSLH                         &kp ENTER
-&none           &kp LEFT_GUI               &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
+&kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
+&kp LEFT_SHIFT  &mt LSHIFT A               &mt LCTRL S            &mt LGUI D           &mt LALT F            &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &mt RSHIFT SEMI                  &long_press DOUBLE_QUOTES APOS
+&kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &mt RCTRL DOT                   &long_press QUESTION FSLH        &kp ENTER
+&none           &kp LEFT_GUI               &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &fast_lt 2 ESC       &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
             >;
 
             display-name = "L0";
