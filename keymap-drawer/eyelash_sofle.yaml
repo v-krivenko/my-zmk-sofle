@@ -50,7 +50,7 @@ layers:
   - N
   - M
   - {t: ',', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
+  - {t: ., s: '>'}
   - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:backspace$$', h: NUM}
   - $$mdi:backspace-reverse-outline$$
   - PgDn
-  - PgUp
+  - {t: PgUp, h: '$$mdi:apple-keyboard-control$$'}
   NUM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -115,7 +115,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
-  - {t: '3', h: '$$mdi:apple-keyboard-control$$', s: '#'}
+  - {t: '3', s: '#'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -129,7 +129,7 @@ layers:
   - {type: held alternate}
   - {t: '0', s: )}
   - {t: '0', s: )}
-  - {t: ., s: '>'}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
   VIM_F:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
