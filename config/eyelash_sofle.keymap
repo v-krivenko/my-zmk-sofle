@@ -69,6 +69,16 @@
         tapping-term-ms = <150>;
     };
 
+    fast_mt: fast_mt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "FAST_MT";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <150>;
+        flavor = "balanced";
+    };
+
     behaviors {
     };
 
@@ -198,11 +208,11 @@
 
         QWERTY {
             bindings = <
-&kp GRAVE       &kp N1                     &kp N2                 &kp N3               &kp N4                &kp N5                   &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
-&kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
-&kp LEFT_SHIFT  &mt LSHIFT A               &mt LCTRL S            &mt LGUI D           &mt LALT F            &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &mt RSHIFT SEMI                  &long_press DOUBLE_QUOTES APOS
-&kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &mt RCTRL ENTER
-&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &fast_lt 2 ESC       &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
+&long_press TILDE GRAVE  &kp N1                     &kp N2                 &kp N3               &kp N4                &kp N5                   &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
+&kp TAB                  &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
+&kp LEFT_SHIFT           &mt LSHIFT A               &mt LCTRL S            &mt LGUI D           &mt LALT F            &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &long_press DOUBLE_QUOTES APOS
+&kp LCTRL                &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &fast_mt RCTRL ENTER
+&none                    &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &fast_lt 2 ESC       &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
             >;
 
             display-name = "L0";
