@@ -27,7 +27,7 @@ layers:
   - {t: O, h: (}
   - {t: P, h: )}
   - {t: \, h: '|', s: '|'}
-  - '&shift_tab'
+  - $$mdi:apple-keyboard-shift$$
   - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: LGUI}
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
   - {t: '''', h: '"', s: '"'}
-  - '&ctrl_tab'
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
