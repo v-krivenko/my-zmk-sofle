@@ -331,7 +331,7 @@ combos:
   l: [SYS]
 - p: [56, 57, 55]
   k: {t: L4, h: toggle}
-  l: [L0, NUM]
+  l: [L0, L4]
 - p: [59, 60, 61]
   k: {t: VIM_F, h: toggle}
   l: [L0, VIM_F]
