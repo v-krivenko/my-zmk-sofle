@@ -260,12 +260,77 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  L4:
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:volume-high$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:volume-low$$
+  - {t: Y, h: ^}
+  - {t: U, h: '&'}
+  - {t: I, h: '*'}
+  - {t: O, h: (}
+  - {t: P, h: )}
+  - {t: \, h: '|', s: '|'}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:power-standby$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
+  - {t: '''', h: '"', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - CMENU
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, h: '?', s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-return$$', h: VIM_F}
+  - CALC
+  - VIM_F
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - $$mdi:backspace-reverse-outline$$
+  - PgDn
+  - PgUp
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
   l: [SYS]
 - p: [56, 57, 55]
-  k: {t: NUM, h: toggle}
+  k: {t: L4, h: toggle}
   l: [L0, NUM]
 - p: [59, 60, 61]
   k: {t: VIM_F, h: toggle}
