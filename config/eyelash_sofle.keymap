@@ -271,11 +271,11 @@
         game {
             display-name = "L4";
             bindings = <
-&kp GRAVE       &kp N1  &kp N2        &kp N3        &kp N4     &kp N5              &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
-&kp TAB         &kp Q   &kp W         &kp E         &kp R      &kp T               &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
-&kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F      &kp G               &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &long_press DOUBLE_QUOTES APOS
-&kp LCTRL       &kp Z   &kp X         &kp C         &kp V      &kp B               &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &fast_mt RCTRL ENTER
-&none           &none   &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &fast_lt 2 ENTER    &kp K_CALC         &mo 2                &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
+&kp GRAVE       &kp N1  &kp N2        &kp N3  &kp N4     &kp N5              &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
+&kp TAB         &kp Q   &kp W         &kp E   &kp R      &kp T               &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D   &kp F      &kp G               &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &long_press DOUBLE_QUOTES APOS
+&kp LCTRL       &kp Z   &kp X         &kp C   &kp V      &kp B               &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &fast_mt RCTRL ENTER
+&none           &none   &kp LEFT_GUI  &none   &kp SPACE  &fast_lt 2 ENTER    &kp K_CALC         &mo 2                &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
             >;
         };
     };
