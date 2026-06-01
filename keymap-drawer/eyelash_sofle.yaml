@@ -318,7 +318,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: VIM_F}
+  - $$mdi:keyboard-space$$
   - CALC
   - VIM_F
   - {t: '$$mdi:backspace$$', h: NUM}
