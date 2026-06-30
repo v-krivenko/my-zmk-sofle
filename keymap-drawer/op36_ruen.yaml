@@ -1,0 +1,200 @@
+layout: {zmk_keyboard: op36_ruen}
+layers:
+  Base:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: RGUI, s: ':'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - Nav
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Symbols
+  - $$mdi:keyboard-tab$$
+  Ru:
+  - RU CYRILLIC SHORT I
+  - RU CYRILLIC TSE
+  - RU CYRILLIC U
+  - RU CYRILLIC KA
+  - RU CYRILLIC IE
+  - RU CYRILLIC EN
+  - RU CYRILLIC GHE
+  - RU CYRILLIC SHA
+  - RU CYRILLIC SHCHA
+  - RU CYRILLIC ZE
+  - {t: RU CYRILLIC EF, h: LGUI}
+  - {t: RU CYRILLIC YERU, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: RU CYRILLIC VE, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: RU CYRILLIC A, h: '$$mdi:apple-keyboard-control$$'}
+  - RU CYRILLIC PE
+  - RU CYRILLIC ER
+  - {t: RU CYRILLIC O, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: RU CYRILLIC EL, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: RU CYRILLIC DE, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: RU CYRILLIC ZHE, h: RGUI}
+  - RU CYRILLIC YA
+  - RU CYRILLIC CHE
+  - RU CYRILLIC ES
+  - RU CYRILLIC EM
+  - RU CYRILLIC I
+  - RU CYRILLIC TE
+  - RU CYRILLIC SOFT SIGN
+  - RU CYRILLIC BE
+  - RU CYRILLIC YU
+  - RU CYRILLIC E
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - Nav
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - Symbols
+  - $$mdi:keyboard-tab$$
+  Symbols:
+  - '&en TILDE'
+  - '&en LT'
+  - {t: '=', s: +}
+  - '&en GT'
+  - '&en GRAVE'
+  - '&en CARET'
+  - '&en LBKT'
+  - _
+  - '&en RBKT'
+  - '&en DLLR'
+  - {t: RU BACKSLASH, h: LGUI}
+  - {t: (, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: ), h: '$$mdi:apple-keyboard-control$$'}
+  - +
+  - '%'
+  - '&en LBRC'
+  - {t: RU SEMI, h: '$$mdi:apple-keyboard-shift$$'}
+  - '&en RBRC'
+  - {t: '!', h: RGUI}
+  - '&en HASH'
+  - '*'
+  - RU COLON
+  - RU FSLH
+  - '&en AMPS'
+  - '&en AT'
+  - '&en PIPE'
+  - RU COMMA
+  - RU DOT
+  - RU QMARK
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Adjust
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Nav:
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:keyboard-esc$$', h: LGUI}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - PRINTSCREEN
+  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:arrow-right-bold$$', h: RGUI}
+  - '&layer_en'
+  - HOME
+  - INS
+  - END
+  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PG DN
+  - PG UP
+  - '&layer_ru'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Adjust
+  - {t: '$$mdi:transfer$$', type: trans}
+  Adjust:
+  - $$mdi:progress-download$$
+  - F1
+  - F2
+  - F3
+  - F4
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - LGUI
+  - {t: F5, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - F8
+  - OUT BLE
+  - {t: '$$mdi:volume-low$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:volume-off$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:volume-high$$', h: '$$mdi:apple-keyboard-option$$'}
+  - RGUI
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F9
+  - F10
+  - F11
+  - F12
+  - OUT USB
+  - $$mdi:skip-previous$$
+  - $$mdi:play-pause$$
+  - $$mdi:skip-next$$
+  - '&studio_unlock'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [6, 7]
+  k: RU CYRILLIC HA
+  l: [Ru]
+- p: [7, 8]
+  k: RU CYRILLIC HARD SIGN
+  l: [Ru]
+- p: [2, 3]
+  k: '&layer_en'
+  l: [Ru]
+- p: [2, 3]
+  k: '&layer_ru'
+  l: [Base]
