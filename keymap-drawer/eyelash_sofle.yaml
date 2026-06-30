@@ -122,11 +122,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - VIM_F
+  - {t: '$$mdi:backspace$$', type: held alternate}
   - {t: '0', s: )}
   - {t: '0', s: )}
   - {t: ., h: '$$mdi:apple-keyboard-control$$', s: '>'}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:play-pause$$
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -355,9 +355,9 @@ combos:
   k: END
 - p: [48, 47]
   k: HOME
-- p: [16, 15]
+- p: [16, 15, 17]
   k: $$mdi:keyboard-esc$$
-- p: [29, 28]
+- p: [29, 28, 30]
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
