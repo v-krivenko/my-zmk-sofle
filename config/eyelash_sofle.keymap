@@ -54,7 +54,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <175>;
+        tapping-term-ms = <200>;
         quick-tap-ms = <0>;
         flavor = "tap-preferred";
     };
@@ -172,13 +172,13 @@
 
         combo_esc {
             bindings = <&kp ESC>;
-            key-positions = <16 15>;
+            key-positions = <16 15 17>;
             require-prior-idle-ms = <200>;
         };
 
         combo_tab {
             bindings = <&kp TAB>;
-            key-positions = <29 28>;
+            key-positions = <29 28 30>;
             require-prior-idle-ms = <200>;
         };
 
@@ -234,11 +234,11 @@
 
         NUMS {
             bindings = <
-&trans  &trans         &trans        &trans       &trans  &trans       &mmv MOVE_UP     &none   &none   &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS      &trans
-&trans  &kp N1         &kp N4        &kp N7       &kp N0  &kp LANG1    &mmv MOVE_DOWN   &none   &kp N7  &kp N8        &kp N9           &kp KP_PLUS       &trans
-&trans  &mt LSHIFT N2  &mt LCTRL N5  &mt LGUI N8  &trans  &kp LANG2    &mmv MOVE_LEFT   &none   &kp N4  &kp N5        &kp N6           &mt RSHIFT ENTER  &trans
-&trans  &kp N3         &kp N6        &kp N9       &trans  &kp LANG3    &mmv MOVE_RIGHT  &none   &kp N1  &kp N2        &kp N3           &trans            &trans
-&trans  &trans         &trans        &trans       &trans  &trans       &mkp LCLK        &trans  &trans  &kp N0        &kp N0           &mt RCTRL DOT
+&trans  &trans         &trans        &trans       &trans  &trans       &mmv MOVE_UP     &none  &none          &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS      &trans
+&trans  &kp N1         &kp N4        &kp N7       &kp N0  &kp LANG1    &mmv MOVE_DOWN   &none  &kp N7         &kp N8        &kp N9           &kp KP_PLUS       &trans
+&trans  &mt LSHIFT N2  &mt LCTRL N5  &mt LGUI N8  &trans  &kp LANG2    &mmv MOVE_LEFT   &none  &kp N4         &kp N5        &kp N6           &mt RSHIFT ENTER  &trans
+&trans  &kp N3         &kp N6        &kp N9       &trans  &kp LANG3    &mmv MOVE_RIGHT  &none  &kp N1         &kp N2        &kp N3           &trans            &trans
+&trans  &trans         &trans        &trans       &none   &trans       &mkp LCLK        &mo 2  &kp BACKSPACE  &kp N0        &kp N0           &mt RCTRL DOT
             >;
 
             display-name = "NUM";
@@ -250,7 +250,7 @@
 &trans  &kp F1         &kp F4        &kp F7       &kp F10       &trans    &trans      &trans      &trans         &kp INS      &trans     &kp PSCRN         &trans
 &trans  &mt LSHIFT F2  &mt LCTRL F5  &mt LGUI F8  &mt LALT F11  &trans    &kp C_PREV  &kp LEFT    &kp DOWN       &kp UP       &kp RIGHT  &mt RSHIFT ENTER  &trans
 &trans  &kp F3         &kp F6        &kp F9       &kp F12       &trans    &kp C_NEXT  &kp KP_NUM  &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans            &trans
-&trans  &trans         &trans        &trans       &trans        &trans    &kp C_PP    &trans      &trans         &trans       &trans     &trans
+&trans  &trans         &trans        &trans       &trans        &none     &kp C_PP    &trans      &trans         &trans       &trans     &trans
             >;
 
             display-name = "VIM_F";
