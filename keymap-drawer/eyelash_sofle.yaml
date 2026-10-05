@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  L0:
+  MAIN:
   - {t: '`', h: '~', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -62,7 +62,7 @@ layers:
   - CALC
   - VIM_F
   - NUM
-  - symv
+  - SYMV
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM:
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  L4:
+  GAME:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -325,7 +325,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - PgDn
   - PgUp
-  symv:
+  SYMV:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -346,6 +346,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '=', s: +}
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -357,6 +360,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -367,14 +372,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
+  - <
+  - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,31 +395,28 @@ combos:
   k: '&soft_off'
   l: [SYS]
 - p: [56, 57, 55]
-  k: {t: L4, h: toggle}
-  l: [L0, L4]
-- p: [59, 60, 61]
-  k: {t: VIM_F, h: toggle}
-  l: [L0, VIM_F]
+  k: {t: GAME, h: toggle}
+  l: [MAIN, GAME]
 - p: [53, 54]
   k: SYS
 - p: [62, 49]
   k: '&eq_arrow'
-  l: [L0]
+  l: [MAIN]
 - p: [63, 49]
   k: '&arrow'
-  l: [L0]
+  l: [MAIN]
 - p: [34, 35]
   k: {t: '[', s: '{'}
-  l: [symv]
+  l: [SYMV]
 - p: [35, 36]
   k: {t: ']', s: '}'}
-  l: [symv]
+  l: [SYMV]
 - p: [21, 22]
   k: {t: '=', s: +}
-  l: [symv]
+  l: [SYMV]
 - p: [23, 22]
   k: {t: '-', s: _}
-  l: [symv]
+  l: [SYMV]
 - p: [48, 49]
   k: END
 - p: [48, 47]
@@ -430,10 +427,10 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
-  l: [L0, VIM_F]
+  l: [MAIN, VIM_F]
 - p: [56, 44]
   k: LANG3
-  l: [L0, VIM_F]
+  l: [MAIN, VIM_F]
 - p: [56, 18]
   k: LANG1
-  l: [L0, VIM_F]
+  l: [MAIN, VIM_F]
