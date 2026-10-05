@@ -105,16 +105,10 @@
             layers = <3>;
         };
 
-        L1_toggle {
+        Game_toggle {
             bindings = <&tog 4>;
             key-positions = <56 57 55>;
             layers = <0 4>;
-        };
-
-        L2_toggle {
-            bindings = <&tog 2>;
-            key-positions = <59 60 61>;
-            layers = <0 2>;
         };
 
         L3_SYS {
@@ -233,7 +227,7 @@
 &none                    &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &mo 5                &none                           &none
             >;
 
-            display-name = "L0";
+            display-name = "MAIN";
         };
 
         NUMS {
@@ -273,7 +267,7 @@
         };
 
         game {
-            display-name = "L4";
+            display-name = "GAME";
             bindings = <
 &kp GRAVE       &kp N1  &kp N2        &kp N3  &kp N4     &kp N5       &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
 &kp TAB         &kp Q   &kp W         &kp E   &kp R      &kp T        &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
@@ -285,12 +279,14 @@
 
         symv {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DEL        &kp LESS_THAN     &kp GREATER_THAN   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans
             >;
+
+            label = "SYMV";
         };
     };
 
