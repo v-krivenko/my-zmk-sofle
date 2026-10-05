@@ -135,27 +135,31 @@
         };
 
         L_BRACKET {
-            bindings = <&long_press LEFT_BRACE LBKT>;
+            bindings = <&kp LBKT>;
             key-positions = <34 35>;
             require-prior-idle-ms = <120>;
+            layers = <5>;
         };
 
         R_BRACKET {
-            bindings = <&long_press RIGHT_BRACE RBKT>;
+            bindings = <&kp RBKT>;
             key-positions = <35 36>;
             require-prior-idle-ms = <120>;
+            layers = <5>;
         };
 
         equal_and_plus {
-            bindings = <&long_press PLUS EQUAL>;
+            bindings = <&kp EQUAL>;
             key-positions = <21 22>;
             require-prior-idle-ms = <120>;
+            layers = <5>;
         };
 
         minus_and_underscore {
-            bindings = <&long_press UNDER MINUS>;
+            bindings = <&kp MINUS>;
             key-positions = <23 22>;
             require-prior-idle-ms = <120>;
+            layers = <5>;
         };
 
         c_end {
@@ -226,7 +230,7 @@
 &kp TAB                  &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
 &kp LEFT_SHIFT           &fast_mt LSHIFT A          &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &long_press DOUBLE_QUOTES APOS
 &kp LCTRL                &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &fast_mt RCTRL ENTER
-&none                    &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &kp RCTRL            &kp PAGE_DOWN                   &kp PAGE_UP
+&none                    &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &mo 5                &none                           &none
             >;
 
             display-name = "L0";
@@ -276,6 +280,16 @@
 &kp LEFT_SHIFT  &kp A   &kp S         &kp D   &kp F      &kp G        &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &long_press DOUBLE_QUOTES APOS
 &kp LCTRL       &kp Z   &kp X         &kp C   &kp V      &kp B        &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &long_press QUESTION FSLH        &fast_mt RCTRL ENTER
 &none           &none   &kp LEFT_GUI  &none   &kp SPACE  &kp SPACE    &kp K_CALC         &mo 2                &fast_lt 1 BACKSPACE     &kp DEL              &kp PAGE_DOWN                   &kp PAGE_UP
+            >;
+        };
+
+        symv {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
