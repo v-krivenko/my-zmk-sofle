@@ -132,28 +132,28 @@
             bindings = <&kp LBKT>;
             key-positions = <34 35>;
             require-prior-idle-ms = <120>;
-            layers = <5>;
+            layers = <5 1 2>;
         };
 
         R_BRACKET {
             bindings = <&kp RBKT>;
             key-positions = <35 36>;
             require-prior-idle-ms = <120>;
-            layers = <5>;
+            layers = <5 1 2>;
         };
 
         equal_and_plus {
             bindings = <&kp EQUAL>;
             key-positions = <21 22>;
             require-prior-idle-ms = <120>;
-            layers = <5>;
+            layers = <5 1 2>;
         };
 
         minus_and_underscore {
             bindings = <&kp MINUS>;
             key-positions = <23 22>;
             require-prior-idle-ms = <120>;
-            layers = <5>;
+            layers = <5 1 2>;
         };
 
         c_end {
