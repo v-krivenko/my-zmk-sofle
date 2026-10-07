@@ -407,16 +407,16 @@ combos:
   l: [MAIN]
 - p: [34, 35]
   k: {t: '[', s: '{'}
-  l: [SYMV]
+  l: [SYMV, NUM, VIM_F]
 - p: [35, 36]
   k: {t: ']', s: '}'}
-  l: [SYMV]
+  l: [SYMV, NUM, VIM_F]
 - p: [21, 22]
   k: {t: '=', s: +}
-  l: [SYMV]
+  l: [SYMV, NUM, VIM_F]
 - p: [23, 22]
   k: {t: '-', s: _}
-  l: [SYMV]
+  l: [SYMV, NUM, VIM_F]
 - p: [48, 49]
   k: END
 - p: [48, 47]
