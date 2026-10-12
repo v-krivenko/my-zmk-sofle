@@ -279,11 +279,11 @@
 
         symv {
             bindings = <
-&trans  &trans  &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans    &trans
-&trans  &trans  &kp ESC  &trans  &trans  &kp LANG1    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &kp BSLH  &trans
-&trans  &trans  &kp TAB  &trans  &trans  &kp LANG2    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp APOS  &trans
-&trans  &trans  &trans   &trans  &trans  &kp LANG3    &trans  &kp DEL        &trans            &trans             &trans  &kp FSLH  &trans
-&trans  &trans  &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans
+&trans     &trans     &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans    &trans
+&kp GRAVE  &kp GRAVE  &kp ESC  &trans  &trans  &kp LANG1    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &kp BSLH  &trans
+&trans     &trans     &kp TAB  &trans  &trans  &kp LANG2    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp APOS  &trans
+&trans     &trans     &trans   &trans  &trans  &kp LANG3    &trans  &kp DEL        &trans            &trans             &trans  &kp FSLH  &trans
+&trans     &trans     &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans
             >;
 
             label = "SYMV";
