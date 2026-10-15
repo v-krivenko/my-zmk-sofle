@@ -80,10 +80,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
+  - '{'
+  - {t: '=', s: +}
+  - '}'
   - LANG1
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -93,10 +93,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '2', h: '$$mdi:apple-keyboard-shift$$', s: '@'}
-  - {t: '5', h: '$$mdi:apple-keyboard-control$$', s: '%'}
-  - {t: '8', h: LGUI, s: '*'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: '-', s: _}
+  - {t: ']', s: '}'}
   - LANG2
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -122,11 +122,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - VIM_F
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '0', s: )}
   - {t: '0', s: )}
   - {t: ., s: '>'}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - $$mdi:play-pause$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -427,10 +427,10 @@ combos:
   k: $$mdi:keyboard-tab$$
 - p: [56, 31]
   k: LANG2
-  l: [MAIN, VIM_F]
+  l: [MAIN, VIM_F, SYMV]
 - p: [56, 44]
   k: LANG3
-  l: [MAIN, VIM_F]
+  l: [MAIN, VIM_F, SYMV]
 - p: [56, 18]
   k: LANG1
-  l: [MAIN, VIM_F]
+  l: [MAIN, VIM_F, SYMV]
