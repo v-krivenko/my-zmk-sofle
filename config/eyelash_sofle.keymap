@@ -232,11 +232,11 @@
 
         NUMS {
             bindings = <
-&trans  &trans         &trans        &trans       &trans  &trans       &mmv MOVE_UP     &none          &none   &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_MINUS      &trans
-&trans  &kp N1         &kp N4        &kp N7       &kp N0  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &kp N8        &kp N9           &kp KP_PLUS       &trans
-&trans  &mt LSHIFT N2  &mt LCTRL N5  &mt LGUI N8  &trans  &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5        &kp N6           &mt RSHIFT ENTER  &trans
-&trans  &kp N3         &kp N6        &kp N9       &trans  &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2        &kp N3           &trans            &trans
-&trans  &trans         &trans        &trans       &none   &trans       &mkp LCLK        &mo 2          &none   &kp N0        &kp N0           &kp DOT
+&trans  &trans         &trans        &trans       &trans  &trans       &mmv MOVE_UP     &none          &none   &none   &none   &none             &trans
+&trans  &trans         &trans        &trans       &trans  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &kp N8  &kp N9  &none             &trans
+&trans  &mt LSHIFT N2  &mt LCTRL N5  &mt LGUI N8  &trans  &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5  &kp N6  &mt RSHIFT ENTER  &trans
+&trans  &trans         &trans        &trans       &trans  &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2  &kp N3  &trans            &trans
+&trans  &trans         &trans        &trans       &none   &trans       &mkp LCLK        &mo 2          &none   &kp N0  &kp N0  &kp DOT
             >;
 
             display-name = "NUM";
@@ -279,11 +279,11 @@
 
         symv {
             bindings = <
-&trans     &trans     &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans    &trans
-&kp GRAVE  &kp GRAVE  &kp ESC  &trans  &trans  &kp LANG1    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &kp BSLH  &trans
-&trans     &trans     &kp TAB  &trans  &trans  &kp LANG2    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp APOS  &trans
-&trans     &trans     &trans   &trans  &trans  &kp LANG3    &trans  &kp DEL        &trans            &trans             &trans  &kp FSLH  &trans
-&trans     &trans     &trans   &trans  &trans  &trans       &trans  &trans         &trans            &trans             &trans  &trans
+&trans     &trans     &trans   &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans                &trans
+&kp GRAVE  &kp GRAVE  &kp ESC  &trans  &trans  &trans    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &kp BSLH              &trans
+&trans     &trans     &kp TAB  &trans  &trans  &trans    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &fast_mt RSHIFT APOS  &trans
+&trans     &trans     &trans   &trans  &trans  &trans    &trans  &kp DEL        &trans            &trans             &trans  &kp FSLH              &trans
+&trans     &trans     &trans   &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans
             >;
 
             label = "SYMV";
