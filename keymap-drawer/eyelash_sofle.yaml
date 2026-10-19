@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - VIM_F
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - VIM_F
   - {type: held alternate}
   - {t: '0', s: )}
   - {t: '0', s: )}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUM, type: held alternate}
   - {type: held}
   - $$mdi:play-pause$$
   - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUM, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -346,14 +346,7 @@ combos:
   k: HOME
 - p: [16, 15, 17]
   k: $$mdi:keyboard-esc$$
+  l: [NUM]
 - p: [29, 28, 30]
   k: $$mdi:keyboard-tab$$
-- p: [56, 31]
-  k: LANG2
-  l: [MAIN, VIM_F]
-- p: [56, 44]
-  k: LANG3
-  l: [MAIN, VIM_F]
-- p: [56, 18]
-  k: LANG1
-  l: [MAIN, VIM_F]
+  l: [MAIN]
