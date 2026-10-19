@@ -128,34 +128,6 @@
             layers = <0>;
         };
 
-        L_BRACKET {
-            bindings = <&kp LBKT>;
-            key-positions = <34 35>;
-            require-prior-idle-ms = <120>;
-            layers = <5 1 2>;
-        };
-
-        R_BRACKET {
-            bindings = <&kp RBKT>;
-            key-positions = <35 36>;
-            require-prior-idle-ms = <120>;
-            layers = <5 1 2>;
-        };
-
-        equal_and_plus {
-            bindings = <&kp EQUAL>;
-            key-positions = <21 22>;
-            require-prior-idle-ms = <120>;
-            layers = <5 1 2>;
-        };
-
-        minus_and_underscore {
-            bindings = <&kp MINUS>;
-            key-positions = <23 22>;
-            require-prior-idle-ms = <120>;
-            layers = <5 1 2>;
-        };
-
         c_end {
             bindings = <&kp END>;
             key-positions = <48 49>;
@@ -183,19 +155,19 @@
         EN_lang {
             bindings = <&kp LANG2>;
             key-positions = <56 31>;
-            layers = <0 2 5>;
+            layers = <0 2>;
         };
 
         RU_lang {
             bindings = <&kp LANG3>;
             key-positions = <56 44>;
-            layers = <0 2 5>;
+            layers = <0 2>;
         };
 
         UA_lang {
             bindings = <&kp LANG1>;
             key-positions = <56 18>;
-            layers = <0 2 5>;
+            layers = <0 2>;
         };
     };
 
@@ -224,17 +196,17 @@
 &kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
 &kp LEFT_SHIFT  &fast_mt LSHIFT A          &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
 &kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
-&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &mo 5                &none                           &none
+&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
             >;
 
             display-name = "MAIN";
         };
 
-        NUMS {
+        NUMS_SYMS {
             bindings = <
 &trans  &trans     &trans    &trans     &trans    &trans       &mmv MOVE_UP     &none          &none   &none   &none   &none             &trans
 &trans  &kp GRAVE  &kp LBRC  &kp EQUAL  &kp RBRC  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &kp N8  &kp N9  &none             &trans
-&trans  &trans     &kp LBKT  &kp MINUS  &kp RBKT  &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5  &kp N6  &mt RSHIFT ENTER  &trans
+&trans  &kp TAB    &kp LBKT  &kp MINUS  &kp RBKT  &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5  &kp N6  &mt RSHIFT ENTER  &trans
 &trans  &trans     &trans    &trans     &trans    &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2  &kp N3  &trans            &trans
 &trans  &trans     &trans    &trans     &trans    &trans       &mkp LCLK        &trans         &trans  &kp N0  &kp N0  &kp DOT
             >;
@@ -273,20 +245,8 @@
 &kp TAB         &kp Q   &kp W         &kp E     &kp R      &kp T        &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
 &kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F      &kp G        &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
 &kp LCTRL       &kp Z   &kp X         &kp C     &kp V      &kp B        &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
-&none           &none   &kp LEFT_GUI  &kp LALT  &kp SPACE  &kp ENTER    &kp K_CALC         &mo 2                &mo 1                    &mo 5                &none                           &none
+&none           &none   &kp LEFT_GUI  &kp LALT  &kp SPACE  &kp ENTER    &kp K_CALC         &trans               &trans                   &trans               &trans                          &trans
             >;
-        };
-
-        symv {
-            bindings = <
-&trans     &trans     &trans   &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans                &trans
-&kp GRAVE  &kp GRAVE  &kp ESC  &trans  &trans  &trans    &trans  &kp BACKSPACE  &kp EQUAL         &kp MINUS          &trans  &kp BSLH              &trans
-&trans     &trans     &kp TAB  &trans  &trans  &trans    &trans  &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &fast_mt RSHIFT APOS  &trans
-&trans     &trans     &trans   &trans  &trans  &trans    &trans  &kp DEL        &trans            &trans             &trans  &kp FSLH              &trans
-&trans     &trans     &trans   &trans  &trans  &trans    &trans  &trans         &trans            &trans             &trans  &trans
-            >;
-
-            label = "SYMV";
         };
     };
 
