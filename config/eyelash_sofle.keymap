@@ -192,7 +192,7 @@
 &trans  &kp GRAVE  &kp LBRC  &kp EQUAL  &kp RBRC  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &kp N8  &kp N9  &none             &trans
 &trans  &kp TAB    &kp LBKT  &kp MINUS  &kp RBKT  &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5  &kp N6  &mt RSHIFT ENTER  &trans
 &trans  &trans     &trans    &trans     &trans    &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2  &kp N3  &trans            &trans
-&trans  &trans     &trans    &trans     &trans    &mo 2        &mkp LCLK        &mo 2          &trans  &kp N0  &kp N0  &kp DOT
+&trans  &trans     &trans    &trans     &trans    &trans       &mkp LCLK        &trans         &trans  &kp N0  &kp N0  &kp DOT
             >;
 
             display-name = "NUM";
@@ -204,7 +204,7 @@
 &trans  &kp F1         &kp F4        &kp F7       &kp F10       &trans    &trans      &kp BACKSPACE  &trans         &kp INS      &trans     &kp PSCRN         &trans
 &trans  &mt LSHIFT F2  &mt LCTRL F5  &mt LGUI F8  &mt LALT F11  &trans    &kp C_PREV  &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &mt RSHIFT ENTER  &trans
 &trans  &kp F3         &kp F6        &kp F9       &kp F12       &trans    &kp C_NEXT  &kp DEL        &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans            &trans
-&trans  &trans         &trans        &trans       &mo 1         &trans    &kp C_PP    &trans         &mo 1          &trans       &trans     &trans
+&trans  &trans         &trans        &trans       &trans        &trans    &kp C_PP    &trans         &trans         &trans       &trans     &trans
             >;
 
             display-name = "VIM_F";
