@@ -123,9 +123,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - VIM_F
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  - VIM_F
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '0', s: )}
   - {t: '0', s: )}
@@ -187,11 +187,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: NUM, type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:play-pause$$
   - {type: held alternate}
-  - {t: NUM, type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
