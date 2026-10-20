@@ -346,7 +346,7 @@ combos:
   k: HOME
 - p: [16, 15, 17]
   k: $$mdi:keyboard-esc$$
-  l: [NUM]
+  l: [NUM, MAIN]
 - p: [29, 28, 30]
   k: $$mdi:keyboard-tab$$
   l: [MAIN]
