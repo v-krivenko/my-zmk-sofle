@@ -144,7 +144,7 @@
             bindings = <&kp ESC>;
             key-positions = <16 15 17>;
             require-prior-idle-ms = <200>;
-            layers = <1>;
+            layers = <1 0>;
         };
 
         combo_tab {
