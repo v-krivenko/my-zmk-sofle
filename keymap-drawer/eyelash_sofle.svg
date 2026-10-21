@@ -494,9 +494,8 @@ path.combo {
 </a></g>
 <g transform="translate(389, 294) rotate(30.0)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-return"/>
 <a href="#VIM_F">
-<text x="0" y="24" class="key hold layer-activator">VIM_F</text>
+<text x="0" y="0" class="key tap layer-activator">VIM_F</text>
 </a></g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1710,9 +1709,9 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(389, 294) rotate(30.0)" class="key enter keypos-57">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-7" y="-7" height="14" width="14.0" class="key enter tap glyph mdi:keyboard-return"/>
+<g transform="translate(389, 294) rotate(30.0)" class="key trans keypos-57">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-7" y="-7" height="14" width="14.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(462, 91)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
