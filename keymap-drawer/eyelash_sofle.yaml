@@ -58,7 +58,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - '&L2_ENTER'
+  - '&l2_enter'
   - CALC
   - VIM_F
   - NUM
