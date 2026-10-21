@@ -180,7 +180,7 @@
 &kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
 &kp LEFT_SHIFT  &fast_mt LSHIFT A          &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
 &kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
-&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &fast_lt 2 ENTER         &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
+&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &mo 2                    &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
             >;
 
             display-name = "MAIN";
@@ -225,11 +225,11 @@
         game {
             display-name = "GAME";
             bindings = <
-&kp GRAVE       &kp N1  &kp N2        &kp N3    &kp N4     &kp N5       &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
-&kp TAB         &kp Q   &kp W         &kp E     &kp R      &kp T        &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
-&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F      &kp G        &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
-&kp LCTRL       &kp Z   &kp X         &kp C     &kp V      &kp B        &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
-&none           &none   &kp LEFT_GUI  &kp LALT  &kp SPACE  &kp ENTER    &kp K_CALC         &trans               &trans                   &trans               &trans                          &trans
+&kp GRAVE       &kp N1  &kp N2        &kp N3    &kp N4     &kp N5    &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
+&kp TAB         &kp Q   &kp W         &kp E     &kp R      &kp T     &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F      &kp G     &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
+&kp LCTRL       &kp Z   &kp X         &kp C     &kp V      &kp B     &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
+&none           &none   &kp LEFT_GUI  &kp LALT  &kp SPACE  &trans    &kp K_CALC         &trans               &trans                   &trans               &trans                          &trans
             >;
         };
     };
