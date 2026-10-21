@@ -93,11 +93,13 @@
         bindings = <&kp LSHIFT>, <&kp LS(TAB)>;
     };
 
-    L2_ENTER: L2_ENTER {
+    l2_enter: l2_enter {
         compatible = "zmk,behavior-tap-dance";
         label = "L2_ENTER";
         #binding-cells = <0>;
         bindings = <&mo 2>, <&kp ENTER>;
+
+        tapping-term-ms = <300>;
     };
 
     behaviors {
@@ -187,7 +189,7 @@
 &kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
 &kp LEFT_SHIFT  &fast_mt LSHIFT A          &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
 &kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
-&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &L2_ENTER                &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
+&none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &l2_enter                &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
             >;
 
             display-name = "MAIN";
