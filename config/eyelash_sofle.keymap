@@ -72,20 +72,6 @@
         flavor = "balanced";
     };
 
-    ctrl_tab: ctrl_tab {
-        compatible = "zmk,behavior-tap-dance";
-        label = "CTRL_TAB";
-        #binding-cells = <0>;
-        bindings = <&kp LCTRL>, <&kp LC(TAB)>;
-    };
-
-    shift_tab: shift_tab {
-        compatible = "zmk,behavior-tap-dance";
-        label = "SHIFT_TAB";
-        #binding-cells = <0>;
-        bindings = <&kp LSHIFT>, <&kp LS(TAB)>;
-    };
-
     l2_enter: l2_enter {
         compatible = "zmk,behavior-tap-dance";
         label = "L2_ENTER";
@@ -93,15 +79,6 @@
         bindings = <&mo 2>, <&kp ENTER>;
 
         tapping-term-ms = <250>;
-    };
-
-    fslh_quest: fslh_quest {
-        compatible = "zmk,behavior-mod-morph";
-        label = "FSLH_QUEST";
-        bindings = <&kp KP_SLASH>, <&kp QUESTION>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
     behaviors {
@@ -201,8 +178,8 @@
 &trans  &trans     &trans                &trans     &trans                 &trans       &mmv MOVE_UP     &none          &none   &none                 &none   &none             &trans
 &trans  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &long_press ASTRK N8  &kp N9  &none             &trans
 &trans  &kp TAB    &kp LBKT              &kp MINUS  &kp RBKT               &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5                &kp N6  &mt RSHIFT ENTER  &trans
-&trans  &trans     &trans                &trans     &trans                 &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2                &kp N3  &fslh_quest       &trans
-&trans  &trans     &trans                &trans     &trans                 &trans       &mkp LCLK        &trans         &trans  &kp N0                &kp N0  &kp DOT
+&trans  &trans     &trans                &trans     &trans                 &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2                &kp N3  &kp KP_SLASH      &trans
+&trans  &trans     &trans                &trans     &trans                 &trans       &mkp LCLK        &trans         &trans  &kp N0                &kp N0  &kp KP_DOT
             >;
 
             display-name = "NUM";
