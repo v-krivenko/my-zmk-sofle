@@ -28,7 +28,7 @@ layers:
   - {t: P, h: )}
   - {t: \, h: '|', s: '|'}
   - $$mdi:apple-keyboard-shift$$
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: LGUI}
   - {t: F, h: '$$mdi:apple-keyboard-option$$'}
@@ -38,8 +38,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
+  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -103,7 +103,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -168,7 +168,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F3
@@ -298,8 +298,8 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: '$$mdi:apple-keyboard-shift$$', s: ':'}
-  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
+  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
