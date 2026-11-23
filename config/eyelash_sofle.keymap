@@ -165,7 +165,7 @@
             bindings = <
 &kp GRAVE       &kp N1                     &kp N2                 &kp N3               &kp N4                &kp N5                   &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
 &kp TAB         &long_press EXCLAMATION Q  &long_press AT_SIGN W  &long_press POUND E  &long_press DOLLAR R  &long_press PERCENT T    &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
-&kp LEFT_SHIFT  &fast_mt LSHIFT A          &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
+&kp LEFT_SHIFT  &kp A                      &fast_mt LCTRL S       &fast_mt LGUI D      &fast_mt LALT F       &kp G                    &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &kp SEMI                         &fast_mt RSHIFT APOS
 &kp LCTRL       &kp Z                      &kp X                  &kp C                &kp V                 &kp B                    &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
 &none           &none                      &kp LEFT_GUI           &kp LEFT_ALT         &fast_lt 1 SPACE      &l2_enter                &kp K_CALC         &mo 2                &mo 1                    &kp ESC              &kp LBKT                        &kp RBKT
             >;
@@ -175,10 +175,10 @@
 
         NUMS_SYMS {
             bindings = <
-&trans  &trans     &trans                &trans     &trans                 &trans       &mmv MOVE_UP     &none          &none   &none                 &none   &none             &trans
-&trans  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &long_press ASTRK N8  &kp N9  &none             &trans
-&trans  &kp TAB    &kp LBKT              &kp MINUS  &kp RBKT               &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5                &kp N6  &mt RSHIFT ENTER  &trans
-&trans  &trans     &trans                &trans     &trans                 &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2                &kp N3  &kp KP_SLASH      &trans
+&trans  &trans     &trans                &trans     &trans                 &trans       &mmv MOVE_UP     &none          &none   &none                 &none   &none         &trans
+&trans  &kp GRAVE  &kp LEFT_PARENTHESIS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp LANG1    &mmv MOVE_DOWN   &kp BACKSPACE  &kp N7  &long_press ASTRK N8  &kp N9  &none         &trans
+&trans  &kp TAB    &kp LBKT              &kp MINUS  &kp RBKT               &kp LANG2    &mmv MOVE_LEFT   &none          &kp N4  &kp N5                &kp N6  &kp ENTER     &trans
+&trans  &trans     &trans                &trans     &trans                 &kp LANG3    &mmv MOVE_RIGHT  &kp DEL        &kp N1  &kp N2                &kp N3  &kp KP_SLASH  &trans
 &trans  &trans     &trans                &trans     &trans                 &trans       &mkp LCLK        &trans         &trans  &kp N0                &kp N0  &kp KP_DOT
             >;
 
@@ -187,10 +187,10 @@
 
         vim-mo_fun {
             bindings = <
-&trans  &trans         &trans        &trans       &trans        &trans    &trans      &trans         &trans         &trans       &trans     &trans            &trans
-&trans  &kp F1         &kp F4        &kp F7       &kp F10       &trans    &trans      &kp BACKSPACE  &trans         &kp INS      &trans     &kp PSCRN         &trans
-&trans  &mt LSHIFT F2  &mt LCTRL F5  &mt LGUI F8  &mt LALT F11  &trans    &kp C_PREV  &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &mt RSHIFT ENTER  &trans
-&trans  &kp F3         &kp F6        &kp F9       &kp F12       &trans    &kp C_NEXT  &kp DEL        &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans            &trans
+&trans  &trans         &trans        &trans       &trans        &trans    &trans      &trans         &trans         &trans       &trans     &trans     &trans
+&trans  &kp F1         &kp F4        &kp F7       &kp F10       &trans    &trans      &kp BACKSPACE  &trans         &kp INS      &trans     &kp PSCRN  &trans
+&trans  &mt LSHIFT F2  &mt LCTRL F5  &mt LGUI F8  &mt LALT F11  &trans    &kp C_PREV  &kp LEFT       &kp DOWN       &kp UP       &kp RIGHT  &kp ENTER  &trans
+&trans  &kp F3         &kp F6        &kp F9       &kp F12       &trans    &kp C_NEXT  &kp DEL        &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans     &trans
 &trans  &trans         &trans        &trans       &trans        &trans    &kp C_PP    &trans         &trans         &trans       &trans     &trans
             >;
 
@@ -214,7 +214,7 @@
             bindings = <
 &kp GRAVE       &kp N1  &kp N2        &kp N3    &kp N4     &kp N5    &kp C_VOL_UP       &kp N6               &kp N7                   &kp N8               &kp N9                          &kp N0                           &kp BACKSPACE
 &kp TAB         &kp Q   &kp W         &kp E     &kp R      &kp T     &kp C_VOLUME_DOWN  &long_press CARET Y  &long_press AMPERSAND U  &long_press ASTRK I  &long_press LEFT_PARENTHESIS O  &long_press RIGHT_PARENTHESIS P  &long_press PIPE BSLH
-&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F      &kp G     &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &fast_mt RSHIFT SEMI             &kp APOS
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D     &kp F      &kp G     &kp C_POWER        &kp H                &kp J                    &kp K                &kp L                           &kp SEMI                         &fast_mt RSHIFT APOS
 &kp LCTRL       &kp Z   &kp X         &kp C     &kp V      &kp B     &kp K_CMENU        &kp N                &kp M                    &kp COMMA            &kp DOT                         &kp FSLH                         &fast_mt RCTRL ENTER
 &none           &none   &kp LEFT_GUI  &kp LALT  &kp SPACE  &trans    &kp K_CALC         &trans               &trans                   &trans               &trans                          &trans
             >;
