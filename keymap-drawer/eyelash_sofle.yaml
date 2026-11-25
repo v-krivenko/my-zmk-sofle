@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - CMENU
+  - APP
   - N
   - M
   - {t: ',', s: <}
@@ -158,9 +158,9 @@ layers:
   - $$mdi:printer-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: F2, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F8, h: LGUI}
+  - F2
+  - F5
+  - F8
   - {t: F11, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-previous$$
@@ -178,8 +178,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:skip-next$$
   - $$mdi:backspace-reverse-outline$$
-  - PgDn
-  - PgUp
+  - PG DN
+  - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
